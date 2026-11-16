@@ -1,6 +1,6 @@
 # Perimenopause and Menopause Guide
 
-A plain-language guide to perimenopause and menopause for women, their friends and their families. It explains what changes in hormones, the brain and the body, and when, then lays out the treatments and habits with the strongest evidence. Every claim links to its source at the bottom of the page.
+I wanted to understand all the new science on perimenopause and menopause but couldn't find a definitive place, with up to date research, and plain language that I could go to so, I built it with the help of my AI agent Claude (Opus 5.5). This is a plain-language guide to perimenopause and menopause for women, their friends and their families. It explains what changes in hormones, the brain and the body, and when, then lays out the treatments and habits with the strongest evidence. All research is linked to its source at the bottom of the page. 
 
 Evidence is current to November 2026. The guide draws mainly on:
 
