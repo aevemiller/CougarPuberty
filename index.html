@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perimenopause and Menopause Guide</title>
+<meta name="description" content="A plain-language guide to perimenopause and menopause: what changes in your hormones, brain and body, and the treatments and habits with the strongest evidence, with sources.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Perimenopause and Menopause: What the Science Shows and What Helps">
+<meta property="og:description" content="What changes, when, and what the major medical societies now recommend. Evidence current to November 2026, with every claim linked to its source.">
+<meta name="theme-color" content="#0b666b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: a calm reference page. A cool slate background, one deep teal accent for structure,
+   a plum second accent for "what to do" notes, a sticky section bar, prose held near 66ch,
+   figures allowed wider. Part 1 explains, Part 2 recommends. */
+:root {
+  --bg: #f3f5f7;
+  --surface: #ffffff;
+  --ink: #15202b;
+  --ink-2: #46525e;
+  --muted: #6c7783;
+  --line: #dde3e9;
+  --accent: #0b666b;
+  --accent-soft: #e1efef;
+  --plum: #7c3a5b;
+  --plum-soft: #f5e9ef;
+  --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s-rest: #c9d0d8;
+  --band-a: #f6f8fa; --band-b: #eef2f5;
+  --ev3: #1d6f3a; --ev3-bg: #e2f2e7;
+  --ev2: #2459a0; --ev2-bg: #e3edf9;
+  --ev1: #855600; --ev1-bg: #fbf0d8;
+  --ev0: #8a2e2e; --ev0-bg: #f7e4e4;
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f141a; --surface: #161d25; --ink: #e7ebef; --ink-2: #b6bec8; --muted: #8b95a1; --line: #2a333d;
+    --accent: #56b8ba; --accent-soft: #15302f; --plum: #d79bbb; --plum-soft: #34202b;
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s-rest: #45505c;
+    --band-a: #18202a; --band-b: #1c2530;
+    --ev3: #7fd39b; --ev3-bg: #16301f; --ev2: #8fb8f0; --ev2-bg: #182a42;
+    --ev1: #f0c46a; --ev1-bg: #33290f; --ev0: #f0a0a0; --ev0-bg: #3a1c1c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f141a; --surface: #161d25; --ink: #e7ebef; --ink-2: #b6bec8; --muted: #8b95a1; --line: #2a333d;
+  --accent: #56b8ba; --accent-soft: #15302f; --plum: #d79bbb; --plum-soft: #34202b;
+  --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s-rest: #45505c;
+  --band-a: #18202a; --band-b: #1c2530;
+  --ev3: #7fd39b; --ev3-bg: #16301f; --ev2: #8fb8f0; --ev2-bg: #182a42;
+  --ev1: #f0c46a; --ev1-bg: #33290f; --ev0: #f0a0a0; --ev0-bg: #3a1c1c;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: var(--body); font-size: 18px; line-height: 1.65;
+  -webkit-text-size-adjust: 100%;
+}
+a { color: var(--accent); text-underline-offset: 2px; }
+a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible, [tabindex]:focus-visible, summary:focus-visible {
+  outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px;
+}
+h1, h2, h3 { font-family: var(--display); font-weight: 650; text-wrap: balance; line-height: 1.2; margin: 0; }
+h1 { font-size: clamp(2rem, 4.4vw, 3rem); letter-spacing: -0.01em; }
+h2 { font-size: clamp(1.45rem, 2.6vw, 1.9rem); }
+h3 { font-size: 1.22rem; }
+p { margin: 0; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+.prose { max-width: 66ch; display: grid; gap: 14px; }
+.prose-wide { max-width: 80ch; }
+.muted { color: var(--muted); }
+.small { font-size: 0.9rem; line-height: 1.55; }
+sup.r { font-size: 0.68em; line-height: 0; margin-left: 1px; }
+sup.r a { text-decoration: none; padding: 0 1px; }
+
+/* Header */
+header.top { padding: 40px 0 28px; background: var(--surface); border-bottom: 1px solid var(--line); }
+.top-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 36px; align-items: start; }
+.eyebrow { font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 12px; }
+.dek { font-size: 1.12rem; color: var(--ink-2); margin-top: 16px; max-width: 58ch; }
+.notice { margin-top: 18px; padding: 12px 14px; border-left: 3px solid var(--accent); background: var(--accent-soft); font-size: 0.95rem; border-radius: 0 6px 6px 0; max-width: 62ch; }
+
+/* Finder (small optional quiz) */
+.finder { border: 1px solid var(--line); border-radius: 12px; padding: 18px 18px 16px; background: var(--bg); }
+.finder h2 { font-size: 1.08rem; font-family: var(--body); font-weight: 700; }
+.finder .sub { font-size: 0.88rem; color: var(--muted); margin: 4px 0 12px; }
+.finder label.q { display: block; font-size: 0.9rem; font-weight: 600; margin: 10px 0 4px; }
+.finder select { width: 100%; font: inherit; font-size: 0.95rem; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+.finder .chk { display: flex; gap: 8px; align-items: flex-start; font-size: 0.9rem; margin-top: 10px; color: var(--ink-2); }
+.finder .chk input { margin-top: 5px; }
+.finder .row { display: flex; gap: 10px; align-items: center; margin-top: 14px; flex-wrap: wrap; }
+.btn { font: inherit; font-size: 0.95rem; font-weight: 600; padding: 8px 14px; border-radius: 8px; border: 1px solid var(--accent); background: var(--accent); color: var(--surface); cursor: pointer; }
+.btn.ghost { background: transparent; color: var(--accent); }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.finder-out { margin-top: 14px; display: grid; gap: 8px; }
+.finder-out[hidden] { display: none; }
+.finder-out p.lead { font-size: 0.9rem; color: var(--ink-2); }
+.finder-out a.hit { display: block; padding: 9px 12px; border-radius: 8px; background: var(--surface); border: 1px solid var(--line); text-decoration: none; color: var(--ink); font-size: 0.93rem; line-height: 1.4; }
+.finder-out a.hit strong { color: var(--accent); font-weight: 600; display: block; }
+.finder-out a.hit:hover { border-color: var(--accent); }
+
+/* Section bar */
+nav.bar { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--surface) 92%, transparent); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
+nav.bar ul { list-style: none; margin: 0 auto; padding: 0 12px; max-width: 1080px; display: flex; gap: 2px; overflow-x: auto; scrollbar-width: thin; }
+nav.bar a { display: block; padding: 12px 10px; font-size: 0.88rem; font-weight: 600; color: var(--ink-2); text-decoration: none; white-space: nowrap; border-bottom: 2px solid transparent; }
+nav.bar a:hover, nav.bar a.on { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* Sections */
+section.s { padding: 52px 0 8px; }
+.s-head { display: grid; gap: 10px; margin-bottom: 20px; max-width: 70ch; }
+.part { margin-top: 44px; padding: 26px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--surface); }
+.part .tag { font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+.part p { color: var(--ink-2); max-width: 64ch; margin-top: 6px; }
+.sub-s { margin-top: 34px; display: grid; gap: 14px; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; display: grid; gap: 6px; align-content: start; }
+.card h3 { font-size: 1.04rem; font-family: var(--body); font-weight: 700; line-height: 1.35; }
+.card p { font-size: 0.96rem; color: var(--ink-2); line-height: 1.55; }
+.card a.more { font-size: 0.9rem; font-weight: 600; }
+
+.stages { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--surface); }
+.stage { padding: 14px 14px 16px; border-right: 1px solid var(--line); display: grid; gap: 6px; align-content: start; }
+.stage:last-child { border-right: 0; }
+.stage .when { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
+.stage h3 { font-size: 0.98rem; font-family: var(--body); font-weight: 700; line-height: 1.3; }
+.stage p { font-size: 0.88rem; color: var(--ink-2); line-height: 1.5; }
+.stage.mark { background: var(--accent-soft); }
+@media (max-width: 860px) { .stages { grid-template-columns: 1fr 1fr; } .stage { border-bottom: 1px solid var(--line); } }
+@media (max-width: 460px) { .stages { grid-template-columns: 1fr; } .stage { border-right: 0; } }
+
+.callout { background: var(--plum-soft); border-left: 3px solid var(--plum); padding: 12px 16px; border-radius: 0 8px 8px 0; font-size: 0.97rem; max-width: 66ch; }
+.callout.teal { background: var(--accent-soft); border-left-color: var(--accent); }
+
+/* Figures */
+figure { margin: 8px 0 0; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 18px 14px; }
+figure .ft { font-family: var(--body); font-weight: 700; font-size: 0.98rem; line-height: 1.4; margin-bottom: 10px; max-width: 75ch; }
+figure .ft span { font-weight: 600; color: var(--muted); }
+.scroll-x { overflow-x: auto; }
+.scroll-x svg { min-width: 640px; }
+figure svg { width: 100%; height: auto; display: block; color: var(--ink); font-family: var(--body); }
+figcaption { font-size: 0.88rem; color: var(--ink-2); line-height: 1.5; margin-top: 10px; max-width: 80ch; }
+.legend { display: flex; gap: 18px; flex-wrap: wrap; font-size: 0.88rem; color: var(--ink-2); margin-bottom: 6px; }
+.legend span { display: inline-flex; align-items: center; gap: 7px; }
+.legend i { width: 18px; height: 3px; border-radius: 2px; display: inline-block; }
+.legend i.sq { height: 12px; width: 12px; border-radius: 3px; }
+
+svg .band-a { fill: var(--band-a); } svg .band-b { fill: var(--band-b); }
+svg .base { stroke: var(--line); stroke-width: 1; }
+svg .grid { stroke: var(--line); stroke-width: 1; }
+svg .fmp { stroke: var(--ink-2); stroke-width: 1.5; }
+svg .fmp-t { font-size: 12px; fill: var(--ink-2); font-weight: 600; }
+svg .axis-t { font-size: 12px; fill: var(--muted); }
+svg .row-t { font-size: 13px; fill: var(--ink); font-weight: 600; }
+svg .note-t { font-size: 12px; fill: var(--ink-2); }
+svg .in-t { font-size: 11.5px; fill: #ffffff; font-weight: 600; pointer-events: none; }
+svg .lab { font-size: 13px; fill: var(--ink); font-weight: 600; }
+svg .ln { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+svg .ln.s1 { stroke: var(--s1); } svg .ln.s2 { stroke: var(--s2); } svg .ln.s3 { stroke: var(--s3); }
+svg .dot { stroke: var(--surface); stroke-width: 2; }
+svg .s1f { fill: var(--s1); } svg .s2f { fill: var(--s2); } svg .s3f { fill: var(--s3); }
+svg .bar { stroke: none; }
+svg .seg-peri { fill: #7d8b99; } svg .seg-peri2 { fill: #56636f; }
+svg .seg-c { fill: var(--s1); } svg .seg-ht { fill: var(--s3); }
+svg .fade { opacity: 0.32; }
+svg .arrowhead { fill: var(--s1); }
+svg .hit { fill: transparent; }
+svg .tip-target { cursor: pointer; outline: none; }
+svg .tip-target:hover .bar, svg .tip-target:focus .bar { filter: brightness(1.08); }
+svg .tip-target:focus-visible .hit { stroke: var(--accent); stroke-width: 2; }
+svg .box { fill: var(--surface); stroke: var(--ink-2); stroke-width: 1.5; }
+svg .box-hl { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 1.5; }
+svg .bt { font-size: 14px; font-weight: 700; fill: var(--ink); }
+svg .bs { font-size: 12px; fill: var(--ink-2); }
+svg .arr { stroke: var(--ink-2); stroke-width: 1.6; fill: none; }
+svg .arr-h { fill: var(--ink-2); }
+svg .al { font-size: 12px; fill: var(--ink-2); font-style: italic; }
+svg .tx { stroke: var(--plum); stroke-width: 1.5; fill: none; }
+svg .tx-dot { fill: var(--plum); }
+svg .tx-t { font-size: 12.5px; fill: var(--plum); font-weight: 700; }
+svg .tx-s { font-size: 12px; fill: var(--ink-2); }
+
+.tip { position: fixed; z-index: 50; max-width: 300px; background: var(--ink); color: var(--surface); font-size: 0.85rem; line-height: 1.45; padding: 9px 11px; border-radius: 8px; pointer-events: none; box-shadow: 0 6px 18px rgba(0,0,0,0.18); }
+.tip[hidden] { display: none; }
+
+/* Segmented bar (bone) */
+.seg { display: flex; gap: 2px; height: 28px; margin: 6px 0 10px; }
+.seg div { border-radius: 4px; display: flex; align-items: center; padding-left: 10px; font-size: 0.85rem; font-weight: 700; color: #ffffff; cursor: default; }
+.seg .p1 { background: var(--s1); }
+.seg .p2 { background: var(--s-rest); color: var(--ink); }
+
+/* Tables */
+.tbl-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 0.93rem; line-height: 1.5; }
+th, td { text-align: left; vertical-align: top; padding: 11px 14px; border-bottom: 1px solid var(--line); }
+thead th { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); background: var(--bg); }
+tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
+tbody th { font-weight: 700; min-width: 160px; }
+td.first { min-width: 210px; }
+details { margin-top: 10px; }
+summary { cursor: pointer; font-size: 0.9rem; font-weight: 600; color: var(--accent); }
+details table { margin-top: 8px; font-size: 0.86rem; }
+
+/* Evidence chips */
+.ev { display: inline-flex; align-items: center; gap: 6px; font-size: 0.78rem; font-weight: 700; padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
+.ev b { font-weight: 700; letter-spacing: 1px; font-size: 0.7rem; }
+.ev.e3 { color: var(--ev3); background: var(--ev3-bg); }
+.ev.e2 { color: var(--ev2); background: var(--ev2-bg); }
+.ev.e1 { color: var(--ev1); background: var(--ev1-bg); }
+.ev.e0 { color: var(--ev0); background: var(--ev0-bg); }
+.ev-key { display: flex; gap: 10px; flex-wrap: wrap; font-size: 0.85rem; color: var(--ink-2); margin: 4px 0 2px; align-items: center; }
+
+/* Timeline of regulatory changes */
+.tl { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; border-left: 2px solid var(--line); max-width: 70ch; }
+.tl li { position: relative; padding: 2px 0 16px 20px; }
+.tl li::before { content: ""; position: absolute; left: -7px; top: 8px; width: 12px; height: 12px; border-radius: 50%; background: var(--surface); border: 2px solid var(--accent); }
+.tl .d { font-size: 0.82rem; font-weight: 700; color: var(--accent); letter-spacing: 0.03em; }
+.tl p { font-size: 0.96rem; color: var(--ink-2); }
+
+/* Age zones */
+.zones { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 0; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); }
+.zone { padding: 16px 16px 18px; display: grid; gap: 6px; align-content: start; background: var(--surface); border-right: 1px solid var(--line); }
+.zone:last-child { border-right: 0; }
+.zone .bar-top { height: 6px; border-radius: 3px; }
+.zone.z1 .bar-top { background: var(--ev3); } .zone.z2 .bar-top { background: var(--ev1); } .zone.z3 .bar-top { background: var(--ev0); }
+.zone .lbl { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+.zone h3 { font-size: 1rem; font-family: var(--body); font-weight: 700; line-height: 1.35; }
+.zone p { font-size: 0.93rem; color: var(--ink-2); line-height: 1.5; }
+@media (max-width: 760px) { .zones { grid-template-columns: 1fr; } .zone { border-right: 0; border-bottom: 1px solid var(--line); } }
+
+.twocol { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+@media (max-width: 760px) { .twocol { grid-template-columns: 1fr; } }
+ul.plain { margin: 0; padding-left: 20px; display: grid; gap: 6px; font-size: 0.96rem; color: var(--ink-2); }
+
+/* Checklist */
+.check { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.check li label { display: flex; gap: 10px; align-items: flex-start; padding: 8px 10px; border-radius: 8px; cursor: pointer; font-size: 0.97rem; }
+.check li label:hover { background: var(--bg); }
+.check input { margin-top: 6px; width: 16px; height: 16px; accent-color: var(--accent); flex: none; }
+.copy-row { display: flex; gap: 12px; align-items: center; margin-top: 10px; flex-wrap: wrap; }
+.copy-msg { font-size: 0.88rem; color: var(--muted); }
+
+/* Sources */
+ol.src { margin: 0; padding-left: 26px; display: grid; gap: 8px; font-size: 0.9rem; color: var(--ink-2); line-height: 1.5; }
+ol.src li:target { background: var(--accent-soft); border-radius: 6px; }
+.src-group { font-family: var(--body); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 22px 0 8px; }
+
+footer { padding: 36px 0 56px; margin-top: 40px; border-top: 1px solid var(--line); font-size: 0.88rem; color: var(--muted); }
+
+@media (max-width: 900px) { .top-grid { grid-template-columns: 1fr; gap: 24px; } }
+@media (max-width: 480px) { body { font-size: 17px; } .wrap { padding: 0 16px; } }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-grid">
+    <div>
+      <div class="eyebrow">Plain-language guide · Evidence current to November 2026</div>
+      <h1>Perimenopause and Menopause: What the Science Shows and What Helps</h1>
+      <p class="dek">Hot flashes, broken sleep, brain fog and the quieter changes in bone and heart health all trace back to the same hormonal shift. Treatment has changed a great deal in the past two years. This guide gathers what the major medical societies now recommend and explains the biology behind it, with every claim linked to its source at the bottom of the page.</p>
+      <p class="notice">This page is for learning, not diagnosis. It summarizes guidance for healthy women in midlife and can't weigh your own health history, so use it to prepare for a conversation with a clinician who knows you.</p>
+    </div>
+
+    <aside class="finder" aria-labelledby="finder-h">
+      <h2 id="finder-h">Two quick questions point you to the sections that fit you</h2>
+      <p class="sub">Optional. Everything is also on the page below.</p>
+      <form id="finder" novalidate>
+        <label class="q" for="f-concern">What would you most like help with?</label>
+        <select id="f-concern">
+          <option value="">Choose one</option>
+          <option value="hot">Hot flashes or night sweats</option>
+          <option value="sleep">Sleep</option>
+          <option value="mood">Mood, anxiety or brain fog</option>
+          <option value="periods">Periods changing, irregular or heavy</option>
+          <option value="vaginal">Vaginal dryness, painful sex or bladder problems</option>
+          <option value="desire">Low sex drive</option>
+          <option value="body">Weight, muscle or joint changes</option>
+          <option value="longterm">Protecting my bones, heart and brain for later</option>
+          <option value="ht">Deciding whether hormone therapy is right for me</option>
+        </select>
+        <label class="q" for="f-stage">Where are you right now?</label>
+        <select id="f-stage">
+          <option value="">Choose one</option>
+          <option value="peri">I still have periods, but they're changing</option>
+          <option value="early">My periods stopped less than 10 years ago</option>
+          <option value="late">My periods stopped 10 or more years ago, or I'm over 60</option>
+          <option value="unsure">I'm not sure</option>
+        </select>
+        <label class="chk" for="f-nohorm"><input type="checkbox" id="f-nohorm"> I can't take hormones or would rather not (for example, after breast cancer or a blood clot)</label>
+        <div class="row">
+          <button class="btn" type="submit" id="f-go">Show my sections</button>
+          <button class="btn ghost" type="button" id="f-reset" hidden>Start over</button>
+        </div>
+      </form>
+      <div class="finder-out" id="finder-out" hidden aria-live="polite"></div>
+    </aside>
+  </div>
+</header>
+
+<nav class="bar" aria-label="Sections">
+  <ul>
+    <li><a href="#start">Start here</a></li>
+    <li><a href="#stages">Stages</a></li>
+    <li><a href="#hotflashes">Hot flashes</a></li>
+    <li><a href="#brain">Brain and mood</a></li>
+    <li><a href="#body">Body changes</a></li>
+    <li><a href="#trust">Trusted sources</a></li>
+    <li><a href="#options">Treatment guide</a></li>
+    <li><a href="#hormones">Hormone therapy</a></li>
+    <li><a href="#nonhormonal">Without hormones</a></li>
+    <li><a href="#longterm">Long-term health</a></li>
+    <li><a href="#appointment">Your appointment</a></li>
+    <li><a href="#sources">Sources</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<!-- START HERE -->
+<section class="s" id="start">
+  <div class="wrap">
+    <div class="s-head">
+      <h2>Most menopause symptoms are treatable, and the years around the final period matter most for long-term health</h2>
+      <p class="muted">Six findings from current guidelines that many women never hear from a doctor.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <h3>Perimenopause can start in your early to mid 40s</h3>
+        <p>Cycle changes usually begin six to eight years before the last period.<sup class="r"><a href="#s22">22</a></sup> New sleep trouble, mood shifts and heavier or irregular periods are often the first clues, sometimes well before hot flashes.</p>
+        <a class="more" href="#stages">How the stages work</a>
+      </div>
+      <div class="card">
+        <h3>Hormone therapy is the most effective treatment for hot flashes</h3>
+        <p>For healthy women under 60, or within 10 years of menopause, the leading U.S. and European guidelines say the benefits outweigh the risks.<sup class="r"><a href="#s1">1</a>,<a href="#s2">2</a>,<a href="#s4">4</a></sup> Since late 2025 the FDA has been removing the boxed warnings about heart disease, breast cancer and dementia from these products.<sup class="r"><a href="#s6">6</a></sup></p>
+        <a class="more" href="#hormones">Hormone therapy in detail</a>
+      </div>
+      <div class="card">
+        <h3>There are good options if you can't or don't want to take hormones</h3>
+        <p>Two newer prescription pills block the brain pathway that sets off hot flashes. Certain antidepressants, gabapentin, cognitive behavioral therapy and clinical hypnosis also have solid evidence.<sup class="r"><a href="#s1">1</a>,<a href="#s3">3</a></sup></p>
+        <a class="more" href="#nonhormonal">Options without hormones</a>
+      </div>
+      <div class="card">
+        <h3>Vaginal and bladder symptoms tend to get worse without treatment</h3>
+        <p>Low-dose vaginal estrogen treats them well and lowers the risk of repeat urinary tract infections, with very little reaching the rest of the body.<sup class="r"><a href="#s5">5</a></sup></p>
+        <a class="more" href="#vaginal">Vaginal and urinary health</a>
+      </div>
+      <div class="card">
+        <h3>Bone loss is fastest in the three years around your final period</h3>
+        <p>About 70% of the bone a woman loses from her spine over that decade goes in this short window.<sup class="r"><a href="#s27">27</a></sup> Heavy strength training with impact helps, and hormone therapy prevents the loss.</p>
+        <a class="more" href="#bone">Protecting bone</a>
+      </div>
+      <div class="card">
+        <h3>Most supplements sold for menopause don't work</h3>
+        <p>Black cohosh, soy isoflavones and other herbal products have not held up in good trials, and they aren't regulated for purity. Guidelines advise against relying on them.<sup class="r"><a href="#s1">1</a>,<a href="#s3">3</a></sup></p>
+        <a class="more" href="#nondrug">What does and doesn't work</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="part" id="part1">
+  <div class="wrap">
+    <div class="tag">Part 1 · The science</div>
+    <p>What changes in your hormones, brain and body, and when. Knowing the timing explains both the symptoms and why some prevention steps matter more in certain years.</p>
+  </div>
+</div>
+
+<!-- STAGES -->
+<section class="s" id="stages">
+  <div class="wrap">
+    <div class="s-head">
+      <h2>Perimenopause begins years before the final period and moves through recognizable stages</h2>
+    </div>
+    <div class="prose">
+      <p>Menopause itself is a single point in time: the day you reach 12 months without a period. Perimenopause is the run-up to it, and it's where most of the symptoms start. Researchers divide the transition into stages based on what your cycle is doing, because cycle changes tell you where you are more reliably than a blood test can.<sup class="r"><a href="#s22">22</a></sup></p>
+    </div>
+    <div class="stages" style="margin-top:20px">
+      <div class="stage"><div class="when">Late 30s to 40s</div><h3>Late reproductive years</h3><p>Cycles are still regular but may get shorter or change in flow. Fertility is already falling.</p></div>
+      <div class="stage"><div class="when">About 6 to 8 years before</div><h3>Early transition</h3><p>Your cycle length starts to vary by a week or more from what's normal for you.</p></div>
+      <div class="stage"><div class="when">About 2 years before</div><h3>Late transition</h3><p>You go 60 days or more without a period at least once. Hot flashes become common.</p></div>
+      <div class="stage mark"><div class="when">Usually 45 to 55</div><h3>Menopause</h3><p>Twelve months in a row without a period. The final period is only recognized in hindsight.</p></div>
+      <div class="stage"><div class="when">First 5 to 8 years after</div><h3>Early postmenopause</h3><p>Hormones settle at their new, lower levels. Hot flashes often continue for years.</p></div>
+      <div class="stage"><div class="when">After that</div><h3>Later postmenopause</h3><p>Symptoms usually ease, and attention turns to long-term health.</p></div>
+    </div>
+    <div class="callout" style="margin-top:18px">You can still get pregnant during perimenopause. If you use a non-hormonal method, guidelines suggest continuing birth control until 12 months without a period if you're 50 or older, or 24 months if you're younger. Hormone therapy doses don't prevent pregnancy.<sup class="r"><a href="#s39">39</a>,<a href="#s43">43</a></sup></div>
+
+    <div class="sub-s" id="hormone-swings">
+      <h3>Estrogen swings unpredictably during perimenopause while progesterone falls</h3>
+      <div class="prose">
+        <p>The usual picture of menopause is a slow, steady fade in estrogen. Perimenopause is messier than that. As the supply of eggs dwindles, the brain pushes harder to get the ovaries to respond, and some cycles end up with unusually high estrogen while others produce very little. Progesterone, which the ovary makes after releasing an egg, drops earlier and more steadily because ovulation becomes less reliable.<sup class="r"><a href="#s23">23</a></sup> After the final period, progesterone stops and estrogen settles at a low, stable level.</p>
+        <p>Those swings explain why perimenopause can feel worse than menopause for some women. Heavy or unpredictable bleeding, breast tenderness and premenstrual-style mood changes can intensify before things calm down.</p>
+      </div>
+      <figure>
+        <div class="ft">Figure 1. Schematic of three reproductive hormones across the stages of the menopause transition</div>
+        <div class="legend" aria-hidden="true">
+          <span><i style="background:var(--s1)"></i>Estradiol (the main estrogen)</span>
+          <span><i style="background:var(--s2)"></i>Progesterone</span>
+          <span><i style="background:var(--s3)"></i>FSH (the brain's prompt to the ovaries)</span>
+        </div>
+        <div class="scroll-x"><svg viewBox="0 28 900 266" role="img" aria-label="Schematic: estradiol rises and falls unpredictably through the transition before dropping after the final period; progesterone falls earlier and more steadily; FSH climbs and stays high.">
+<rect class="band-a" x="70.0" y="46" width="100.8" height="204"/><text class="axis-t" x="120.4" y="270" text-anchor="middle">Late</text><text class="axis-t" x="120.4" y="285" text-anchor="middle">reproductive</text><rect class="band-b" x="170.8" y="46" width="216.0" height="204"/><text class="axis-t" x="278.8" y="270" text-anchor="middle">Early</text><text class="axis-t" x="278.8" y="285" text-anchor="middle">transition</text><rect class="band-a" x="386.8" y="46" width="129.6" height="204"/><text class="axis-t" x="451.6" y="270" text-anchor="middle">Late</text><text class="axis-t" x="451.6" y="285" text-anchor="middle">transition</text><rect class="band-b" x="516.4" y="46" width="158.4" height="204"/><text class="axis-t" x="595.6" y="270" text-anchor="middle">Early</text><text class="axis-t" x="595.6" y="285" text-anchor="middle">postmenopause</text><rect class="band-a" x="674.8" y="46" width="115.2" height="204"/><text class="axis-t" x="732.4" y="270" text-anchor="middle">Later</text><text class="axis-t" x="732.4" y="285" text-anchor="middle">postmenopause</text>
+<line class="base" x1="70" y1="250" x2="790" y2="250"/>
+<line class="fmp" x1="516.4" y1="46" x2="516.4" y2="250"/>
+<text class="fmp-t" x="522.4" y="58">Final period</text>
+<path class="ln s3" d="M70.0,223.4 L71.5,223.2 L73.0,222.9 L74.5,222.7 L76.0,222.5 L77.5,222.3 L79.0,222.0 L80.5,221.8 L82.0,221.6 L83.5,221.4 L85.0,221.1 L86.5,220.9 L88.0,220.7 L89.5,220.5 L91.0,220.2 L92.5,220.0 L94.0,219.8 L95.5,219.6 L97.0,219.3 L98.5,219.1 L100.0,218.9 L101.5,218.7 L103.0,218.4 L104.5,218.2 L106.0,218.0 L107.5,217.7 L109.0,217.5 L110.5,217.3 L112.0,217.1 L113.5,216.8 L115.0,216.6 L116.5,216.4 L118.0,216.2 L119.5,215.9 L121.0,215.7 L122.5,215.5 L124.0,215.3 L125.5,215.0 L127.0,214.8 L128.5,214.6 L130.0,214.4 L131.5,214.1 L133.0,213.9 L134.5,213.7 L136.0,213.4 L137.5,213.2 L139.0,213.0 L140.5,212.8 L142.0,212.5 L143.5,212.3 L145.0,212.1 L146.5,211.9 L148.0,211.6 L149.5,211.4 L151.0,211.2 L152.5,211.0 L154.0,210.7 L155.5,210.5 L157.0,210.3 L158.5,210.1 L160.0,209.8 L161.5,209.6 L163.0,209.4 L164.5,209.2 L166.0,208.9 L167.5,208.7 L169.0,208.5 L170.5,208.2 L172.0,207.7 L173.5,207.1 L175.0,206.5 L176.5,205.9 L178.0,205.4 L179.5,204.9 L181.0,204.5 L182.5,204.1 L184.0,203.7 L185.5,203.5 L187.0,203.3 L188.5,203.2 L190.0,203.2 L191.5,203.3 L193.0,203.4 L194.5,203.6 L196.0,203.8 L197.5,204.1 L199.0,204.5 L200.5,204.8 L202.0,205.2 L203.5,205.5 L205.0,205.9 L206.5,206.2 L208.0,206.5 L209.5,206.7 L211.0,206.9 L212.5,206.9 L214.0,206.9 L215.5,206.8 L217.0,206.5 L218.5,206.1 L220.0,205.6 L221.5,205.0 L223.0,204.2 L224.5,203.3 L226.0,202.3 L227.5,201.2 L229.0,200.0 L230.5,198.7 L232.0,197.2 L233.5,195.8 L235.0,194.2 L236.5,192.7 L238.0,191.1 L239.5,189.5 L241.0,188.0 L242.5,186.5 L244.0,185.0 L245.5,183.7 L247.0,182.4 L248.5,181.3 L250.0,180.2 L251.5,179.4 L253.0,178.6 L254.5,178.1 L256.0,177.7 L257.5,177.4 L259.0,177.4 L260.5,177.5 L262.0,177.8 L263.5,178.3 L265.0,178.9 L266.5,179.6 L268.0,180.4 L269.5,181.4 L271.0,182.5 L272.5,183.6 L274.0,184.8 L275.5,186.0 L277.0,187.2 L278.5,188.4 L280.0,189.5 L281.5,190.6 L283.0,191.6 L284.5,192.5 L286.0,193.3 L287.5,194.0 L289.0,194.5 L290.5,194.8 L292.0,195.0 L293.5,195.0 L295.0,194.9 L296.5,194.5 L298.0,194.0 L299.5,193.3 L301.0,192.5 L302.5,191.5 L304.0,190.4 L305.5,189.1 L307.0,187.7 L308.5,186.3 L310.0,184.7 L311.5,183.1 L313.0,181.5 L314.5,179.8 L316.0,178.2 L317.5,176.6 L319.0,175.0 L320.5,173.5 L322.0,172.1 L323.5,170.7 L325.0,169.5 L326.5,168.4 L328.0,167.4 L329.5,166.6 L331.0,165.8 L332.5,165.3 L334.0,164.8 L335.5,164.5 L337.0,164.3 L338.5,164.2 L340.0,164.3 L341.5,164.4 L343.0,164.7 L344.5,165.0 L346.0,165.4 L347.5,165.8 L349.0,166.2 L350.5,166.7 L352.0,167.1 L353.5,167.6 L355.0,168.0 L356.5,168.4 L358.0,168.7 L359.5,169.0 L361.0,169.2 L362.5,169.3 L364.0,169.4 L365.5,169.3 L367.0,169.2 L368.5,169.0 L370.0,168.7 L371.5,168.4 L373.0,167.9 L374.5,167.5 L376.0,166.9 L377.5,166.4 L379.0,165.8 L380.5,165.1 L382.0,164.5 L383.5,163.9 L385.0,163.3 L386.5,162.7 L388.0,161.7 L389.5,160.6 L391.0,159.5 L392.5,158.6 L394.0,157.7 L395.5,156.9 L397.0,156.2 L398.5,155.6 L400.0,155.1 L401.5,154.7 L403.0,154.5 L404.5,154.4 L406.0,154.3 L407.5,154.4 L409.0,154.6 L410.5,154.8 L412.0,155.1 L413.5,155.5 L415.0,155.9 L416.5,156.3 L418.0,156.7 L419.5,157.1 L421.0,157.5 L422.5,157.8 L424.0,158.0 L425.5,158.2 L427.0,158.3 L428.5,158.2 L430.0,158.0 L431.5,157.7 L433.0,157.2 L434.5,156.6 L436.0,155.8 L437.5,154.8 L439.0,153.7 L440.5,152.5 L442.0,151.0 L443.5,149.5 L445.0,147.8 L446.5,146.1 L448.0,144.2 L449.5,142.2 L451.0,140.2 L452.5,138.1 L454.0,136.0 L455.5,133.9 L457.0,131.8 L458.5,129.8 L460.0,127.8 L461.5,125.9 L463.0,124.0 L464.5,122.3 L466.0,120.7 L467.5,119.2 L469.0,117.9 L470.5,116.7 L472.0,115.6 L473.5,114.8 L475.0,114.0 L476.5,113.4 L478.0,113.0 L479.5,112.7 L481.0,112.5 L482.5,112.5 L484.0,112.5 L485.5,112.6 L487.0,112.8 L488.5,113.1 L490.0,113.4 L491.5,113.7 L493.0,114.0 L494.5,114.3 L496.0,114.5 L497.5,114.7 L499.0,114.9 L500.5,114.9 L502.0,114.9 L503.5,114.8 L505.0,114.6 L506.5,114.3 L508.0,113.8 L509.5,113.3 L511.0,112.6 L512.5,111.8 L514.0,111.0 L515.5,110.0 L517.0,109.3 L518.5,108.9 L520.0,108.6 L521.5,108.2 L523.0,107.9 L524.5,107.6 L526.0,107.2 L527.5,106.9 L529.0,106.6 L530.5,106.2 L532.0,105.9 L533.5,105.5 L535.0,105.2 L536.5,104.9 L538.0,104.5 L539.5,104.2 L541.0,103.8 L542.5,103.5 L544.0,103.2 L545.5,102.8 L547.0,102.5 L548.5,102.1 L550.0,101.8 L551.5,101.5 L553.0,101.1 L554.5,100.8 L556.0,100.4 L557.5,100.1 L559.0,99.8 L560.5,99.4 L562.0,99.1 L563.5,98.7 L565.0,98.4 L566.5,98.1 L568.0,97.7 L569.5,97.4 L571.0,97.1 L572.5,96.7 L574.0,96.4 L575.5,96.0 L577.0,95.7 L578.5,95.4 L580.0,95.0 L581.5,94.7 L583.0,94.3 L584.5,94.0 L586.0,93.7 L587.5,93.3 L589.0,93.0 L590.5,92.6 L592.0,92.3 L593.5,92.0 L595.0,91.6 L596.5,91.3 L598.0,90.9 L599.5,90.6 L601.0,90.3 L602.5,89.9 L604.0,89.6 L605.5,89.2 L607.0,88.9 L608.5,88.6 L610.0,88.2 L611.5,87.9 L613.0,87.6 L614.5,87.2 L616.0,86.9 L617.5,86.6 L619.0,86.7 L620.5,86.8 L622.0,86.9 L623.5,87.0 L625.0,87.1 L626.5,87.2 L628.0,87.3 L629.5,87.4 L631.0,87.5 L632.5,87.6 L634.0,87.7 L635.5,87.8 L637.0,87.9 L638.5,88.0 L640.0,88.1 L641.5,88.2 L643.0,88.3 L644.5,88.4 L646.0,88.5 L647.5,88.6 L649.0,88.7 L650.5,88.8 L652.0,88.9 L653.5,89.0 L655.0,89.1 L656.5,89.2 L658.0,89.3 L659.5,89.4 L661.0,89.5 L662.5,89.6 L664.0,89.7 L665.5,89.8 L667.0,89.9 L668.5,90.0 L670.0,90.1 L671.5,90.2 L673.0,90.3 L674.5,90.4 L676.0,90.5 L677.5,90.6 L679.0,90.7 L680.5,90.8 L682.0,90.9 L683.5,91.0 L685.0,91.1 L686.5,91.2 L688.0,91.3 L689.5,91.4 L691.0,91.5 L692.5,91.6 L694.0,91.7 L695.5,91.8 L697.0,91.9 L698.5,92.0 L700.0,92.1 L701.5,92.2 L703.0,92.3 L704.5,92.4 L706.0,92.5 L707.5,92.6 L709.0,92.7 L710.5,92.8 L712.0,92.9 L713.5,93.0 L715.0,93.1 L716.5,93.2 L718.0,93.2 L719.5,93.3 L721.0,93.4 L722.5,93.5 L724.0,93.6 L725.5,93.7 L727.0,93.8 L728.5,93.9 L730.0,94.0 L731.5,94.1 L733.0,94.2 L734.5,94.3 L736.0,94.4 L737.5,94.5 L739.0,94.6 L740.5,94.7 L742.0,94.8 L743.5,94.9 L745.0,95.0 L746.5,95.1 L748.0,95.2 L749.5,95.3 L751.0,95.4 L752.5,95.5 L754.0,95.6 L755.5,95.7 L757.0,95.8 L758.5,95.9 L760.0,96.0 L761.5,96.1 L763.0,96.2 L764.5,96.3 L766.0,96.4 L767.5,96.5 L769.0,96.6 L770.5,96.7 L772.0,96.8 L773.5,96.9 L775.0,97.0 L776.5,97.1 L778.0,97.2 L779.5,97.3 L781.0,97.4 L782.5,97.5 L784.0,97.6 L785.5,97.7 L787.0,97.8 L788.5,97.9 L790.0,98.0"/>
+<path class="ln s2" d="M70.0,242.4 L71.5,242.4 L73.0,242.4 L74.5,242.4 L76.0,242.1 L77.5,229.9 L79.0,187.7 L80.5,142.4 L82.0,145.0 L83.5,192.2 L85.0,232.1 L86.5,242.2 L88.0,242.4 L89.5,242.4 L91.0,242.4 L92.5,242.4 L94.0,242.4 L95.5,242.4 L97.0,242.4 L98.5,242.4 L100.0,242.4 L101.5,236.7 L103.0,204.0 L104.5,153.7 L106.0,137.6 L107.5,175.3 L109.0,222.8 L110.5,241.2 L112.0,242.4 L113.5,242.4 L115.0,242.4 L116.5,242.4 L118.0,242.4 L119.5,242.4 L121.0,242.4 L122.5,242.4 L124.0,242.4 L125.5,240.4 L127.0,218.1 L128.5,168.7 L130.0,136.3 L131.5,159.3 L133.0,209.9 L134.5,238.5 L136.0,242.4 L137.5,242.4 L139.0,242.4 L140.5,242.4 L142.0,242.4 L143.5,242.4 L145.0,242.4 L146.5,242.4 L148.0,242.4 L149.5,242.0 L151.0,228.8 L152.5,185.6 L154.0,141.4 L155.5,146.3 L157.0,194.3 L158.5,233.0 L160.0,242.3 L161.5,242.4 L163.0,242.4 L164.5,242.4 L166.0,242.4 L167.5,242.4 L169.0,242.4 L170.5,242.4 L172.0,242.4 L173.5,242.4 L175.0,236.6 L176.5,208.3 L178.0,173.0 L179.5,171.4 L181.0,204.1 L182.5,233.3 L184.0,242.0 L185.5,242.4 L187.0,242.4 L188.5,242.4 L190.0,242.4 L191.5,242.4 L193.0,242.4 L194.5,242.4 L196.0,242.4 L197.5,242.4 L199.0,242.2 L200.5,239.9 L202.0,235.0 L203.5,232.1 L205.0,234.6 L206.5,239.5 L208.0,242.1 L209.5,242.4 L211.0,242.4 L212.5,242.4 L214.0,242.4 L215.5,242.4 L217.0,242.4 L218.5,242.4 L220.0,242.4 L221.5,242.4 L223.0,242.1 L224.5,233.5 L226.0,207.0 L227.5,181.5 L229.0,186.1 L230.5,215.2 L232.0,237.4 L233.5,242.3 L235.0,242.4 L236.5,242.4 L238.0,242.4 L239.5,242.4 L241.0,242.4 L242.5,242.4 L244.0,242.4 L245.5,242.4 L247.0,242.4 L248.5,238.5 L250.0,219.1 L251.5,192.0 L253.0,186.0 L254.5,208.4 L256.0,233.3 L257.5,242.0 L259.0,242.4 L260.5,242.4 L262.0,242.4 L263.5,242.4 L265.0,242.4 L266.5,242.4 L268.0,242.4 L269.5,242.4 L271.0,242.4 L272.5,241.1 L274.0,228.6 L275.5,203.7 L277.0,189.8 L278.5,203.4 L280.0,228.2 L281.5,240.9 L283.0,242.4 L284.5,242.4 L286.0,242.4 L287.5,242.4 L289.0,242.4 L290.5,242.4 L292.0,242.4 L293.5,242.4 L295.0,242.4 L296.5,242.1 L298.0,235.2 L299.5,215.0 L301.0,196.6 L302.5,201.2 L304.0,223.1 L305.5,239.0 L307.0,242.4 L308.5,242.4 L310.0,242.4 L311.5,242.4 L313.0,242.4 L314.5,242.4 L316.0,242.4 L317.5,242.4 L319.0,242.4 L320.5,242.4 L322.0,241.9 L323.5,239.7 L325.0,236.9 L326.5,236.4 L328.0,238.9 L329.5,241.5 L331.0,242.4 L332.5,242.4 L334.0,242.4 L335.5,242.4 L337.0,242.4 L338.5,242.4 L340.0,242.4 L341.5,242.4 L343.0,242.4 L344.5,242.4 L346.0,242.2 L347.5,240.9 L349.0,238.3 L350.5,236.9 L352.0,238.5 L353.5,241.0 L355.0,242.3 L356.5,242.4 L358.0,242.4 L359.5,242.4 L361.0,242.4 L362.5,242.4 L364.0,242.4 L365.5,242.4 L367.0,242.4 L368.5,242.4 L370.0,242.4 L371.5,241.6 L373.0,239.6 L374.5,212.0 L376.0,215.8 L377.5,230.3 L379.0,240.4 L380.5,242.4 L382.0,242.4 L383.5,242.4 L385.0,242.4 L386.5,242.4 L388.0,242.4 L389.5,242.4 L391.0,242.5 L392.5,242.6 L394.0,242.6 L395.5,240.6 L397.0,231.6 L398.5,231.8 L400.0,233.9 L401.5,239.3 L403.0,242.6 L404.5,243.3 L406.0,243.3 L407.5,243.3 L409.0,243.3 L410.5,243.3 L412.0,243.3 L413.5,243.3 L415.0,243.3 L416.5,243.3 L418.0,243.3 L419.5,243.3 L421.0,243.3 L422.5,243.3 L424.0,243.3 L425.5,243.3 L427.0,243.3 L428.5,243.3 L430.0,243.3 L431.5,243.3 L433.0,243.3 L434.5,243.3 L436.0,243.3 L437.5,243.3 L439.0,243.3 L440.5,243.3 L442.0,243.3 L443.5,243.3 L445.0,243.3 L446.5,243.3 L448.0,243.3 L449.5,243.3 L451.0,243.3 L452.5,243.3 L454.0,243.3 L455.5,243.3 L457.0,243.3 L458.5,243.3 L460.0,243.3 L461.5,243.3 L463.0,243.3 L464.5,243.3 L466.0,243.3 L467.5,243.3 L469.0,243.3 L470.5,243.3 L472.0,243.3 L473.5,243.3 L475.0,243.3 L476.5,243.3 L478.0,243.3 L479.5,243.3 L481.0,243.3 L482.5,243.3 L484.0,243.3 L485.5,243.3 L487.0,243.3 L488.5,243.3 L490.0,243.3 L491.5,243.3 L493.0,243.3 L494.5,243.3 L496.0,243.3 L497.5,243.3 L499.0,227.6 L500.5,238.2 L502.0,242.9 L503.5,243.3 L505.0,243.3 L506.5,243.3 L508.0,243.3 L509.5,243.3 L511.0,243.3 L512.5,243.3 L514.0,243.3 L515.5,243.3 L517.0,244.3 L518.5,244.3 L520.0,244.3 L521.5,244.3 L523.0,244.3 L524.5,244.3 L526.0,244.3 L527.5,244.3 L529.0,244.3 L530.5,244.3 L532.0,244.3 L533.5,244.3 L535.0,244.3 L536.5,244.3 L538.0,244.3 L539.5,244.3 L541.0,244.3 L542.5,244.3 L544.0,244.3 L545.5,244.3 L547.0,244.3 L548.5,244.3 L550.0,244.3 L551.5,244.3 L553.0,244.3 L554.5,244.3 L556.0,244.3 L557.5,244.3 L559.0,244.3 L560.5,244.3 L562.0,244.3 L563.5,244.3 L565.0,244.3 L566.5,244.3 L568.0,244.3 L569.5,244.3 L571.0,244.3 L572.5,244.3 L574.0,244.3 L575.5,244.3 L577.0,244.3 L578.5,244.3 L580.0,244.3 L581.5,244.3 L583.0,244.3 L584.5,244.3 L586.0,244.3 L587.5,244.3 L589.0,244.3 L590.5,244.3 L592.0,244.3 L593.5,244.3 L595.0,244.3 L596.5,244.3 L598.0,244.3 L599.5,244.3 L601.0,244.3 L602.5,244.3 L604.0,244.3 L605.5,244.3 L607.0,244.3 L608.5,244.3 L610.0,244.3 L611.5,244.3 L613.0,244.3 L614.5,244.3 L616.0,244.3 L617.5,244.3 L619.0,244.3 L620.5,244.3 L622.0,244.3 L623.5,244.3 L625.0,244.3 L626.5,244.3 L628.0,244.3 L629.5,244.3 L631.0,244.3 L632.5,244.3 L634.0,244.3 L635.5,244.3 L637.0,244.3 L638.5,244.3 L640.0,244.3 L641.5,244.3 L643.0,244.3 L644.5,244.3 L646.0,244.3 L647.5,244.3 L649.0,244.3 L650.5,244.3 L652.0,244.3 L653.5,244.3 L655.0,244.3 L656.5,244.3 L658.0,244.3 L659.5,244.3 L661.0,244.3 L662.5,244.3 L664.0,244.3 L665.5,244.3 L667.0,244.3 L668.5,244.3 L670.0,244.3 L671.5,244.3 L673.0,244.3 L674.5,244.3 L676.0,244.3 L677.5,244.3 L679.0,244.3 L680.5,244.3 L682.0,244.3 L683.5,244.3 L685.0,244.3 L686.5,244.3 L688.0,244.3 L689.5,244.3 L691.0,244.3 L692.5,244.3 L694.0,244.3 L695.5,244.3 L697.0,244.3 L698.5,244.3 L700.0,244.3 L701.5,244.3 L703.0,244.3 L704.5,244.3 L706.0,244.3 L707.5,244.3 L709.0,244.3 L710.5,244.3 L712.0,244.3 L713.5,244.3 L715.0,244.3 L716.5,244.3 L718.0,244.3 L719.5,244.3 L721.0,244.3 L722.5,244.3 L724.0,244.3 L725.5,244.3 L727.0,244.3 L728.5,244.3 L730.0,244.3 L731.5,244.3 L733.0,244.3 L734.5,244.3 L736.0,244.3 L737.5,244.3 L739.0,244.3 L740.5,244.3 L742.0,244.3 L743.5,244.3 L745.0,244.3 L746.5,244.3 L748.0,244.3 L749.5,244.3 L751.0,244.3 L752.5,244.3 L754.0,244.3 L755.5,244.3 L757.0,244.3 L758.5,244.3 L760.0,244.3 L761.5,244.3 L763.0,244.3 L764.5,244.3 L766.0,244.3 L767.5,244.3 L769.0,244.3 L770.5,244.3 L772.0,244.3 L773.5,244.3 L775.0,244.3 L776.5,244.3 L778.0,244.3 L779.5,244.3 L781.0,244.3 L782.5,244.3 L784.0,244.3 L785.5,244.3 L787.0,244.3 L788.5,244.3 L790.0,244.3"/>
+<path class="ln s1" d="M70.0,170.2 L71.5,167.8 L73.0,154.8 L74.5,135.3 L76.0,124.7 L77.5,132.6 L79.0,151.8 L80.5,166.5 L82.0,170.2 L83.5,170.2 L85.0,170.2 L86.5,170.2 L88.0,170.2 L89.5,170.2 L91.0,170.2 L92.5,170.2 L94.0,170.2 L95.5,169.4 L97.0,160.2 L98.5,141.4 L100.0,126.2 L101.5,128.1 L103.0,145.4 L104.5,163.0 L106.0,169.9 L107.5,170.2 L109.0,170.2 L110.5,170.2 L112.0,170.2 L113.5,170.2 L115.0,170.2 L116.5,170.2 L118.0,170.2 L119.5,170.1 L121.0,164.5 L122.5,147.8 L124.0,129.6 L125.5,125.4 L127.0,139.0 L128.5,158.3 L130.0,168.9 L131.5,170.2 L133.0,170.2 L134.5,170.2 L136.0,170.2 L137.5,170.2 L139.0,170.2 L140.5,170.2 L142.0,170.2 L143.5,170.2 L145.0,167.5 L146.5,154.1 L148.0,134.6 L149.5,124.6 L151.0,133.2 L152.5,152.6 L154.0,166.9 L155.5,170.2 L157.0,170.2 L158.5,170.2 L160.0,170.2 L161.5,170.2 L163.0,170.2 L164.5,170.2 L166.0,170.2 L167.5,170.2 L169.0,169.3 L170.5,159.6 L172.0,140.5 L173.5,125.1 L175.0,127.0 L176.5,144.9 L178.0,163.6 L179.5,171.1 L181.0,171.8 L182.5,172.4 L184.0,173.0 L185.5,173.7 L187.0,174.5 L188.5,175.3 L190.0,176.1 L191.5,176.9 L193.0,177.6 L194.5,172.3 L196.0,156.5 L197.5,140.7 L199.0,138.9 L200.5,153.0 L202.0,171.1 L203.5,180.7 L205.0,182.1 L206.5,182.5 L208.0,182.9 L209.5,183.3 L211.0,183.7 L212.5,184.1 L214.0,184.5 L215.5,184.9 L217.0,185.3 L218.5,182.1 L220.0,165.5 L221.5,140.7 L223.0,127.3 L224.5,138.2 L226.0,164.0 L227.5,183.5 L229.0,188.2 L230.5,188.5 L232.0,188.8 L233.5,189.1 L235.0,189.4 L236.5,189.7 L238.0,190.0 L239.5,190.2 L241.0,190.5 L242.5,189.0 L244.0,172.6 L245.5,141.6 L247.0,119.0 L248.5,125.3 L250.0,154.7 L251.5,182.2 L253.0,191.9 L254.5,192.3 L256.0,192.4 L257.5,192.5 L259.0,192.6 L260.5,192.7 L262.0,192.8 L263.5,192.9 L265.0,192.9 L266.5,192.6 L268.0,183.1 L269.5,157.2 L271.0,130.3 L272.5,125.3 L274.0,147.0 L275.5,176.1 L277.0,191.3 L278.5,192.7 L280.0,192.7 L281.5,192.6 L283.0,192.4 L284.5,192.3 L286.0,192.2 L287.5,192.0 L289.0,191.8 L290.5,191.6 L292.0,184.3 L293.5,152.1 L295.0,106.8 L296.5,84.3 L298.0,105.4 L299.5,150.9 L301.0,183.3 L302.5,189.7 L304.0,189.4 L305.5,189.1 L307.0,188.8 L308.5,188.5 L310.0,188.2 L311.5,187.9 L313.0,187.5 L314.5,187.2 L316.0,183.5 L317.5,155.3 L319.0,105.3 L320.5,71.1 L322.0,83.0 L323.5,129.5 L325.0,170.7 L326.5,183.9 L328.0,183.8 L329.5,183.4 L331.0,183.0 L332.5,182.6 L334.0,182.2 L335.5,181.8 L337.0,181.4 L338.5,181.0 L340.0,180.0 L341.5,166.8 L343.0,134.5 L344.5,104.2 L346.0,101.7 L347.5,128.8 L349.0,161.2 L350.5,176.5 L352.0,177.4 L353.5,177.0 L355.0,176.7 L356.5,176.3 L358.0,176.0 L359.5,175.6 L361.0,175.3 L362.5,174.9 L364.0,174.6 L365.5,168.0 L367.0,142.3 L368.5,108.3 L370.0,93.7 L371.5,111.6 L373.0,145.6 L374.5,168.3 L376.0,172.4 L377.5,172.1 L379.0,171.9 L380.5,171.7 L382.0,171.5 L383.5,171.3 L385.0,171.2 L386.5,171.0 L388.0,181.8 L389.5,179.8 L391.0,160.7 L392.5,131.2 L394.0,119.4 L395.5,137.9 L397.0,170.3 L398.5,192.9 L400.0,200.7 L401.5,203.8 L403.0,206.4 L404.5,208.7 L406.0,209.2 L407.5,201.3 L409.0,177.7 L410.5,143.6 L412.0,117.9 L413.5,118.6 L415.0,145.4 L416.5,179.9 L418.0,203.6 L419.5,212.6 L421.0,214.2 L422.5,214.5 L424.0,214.7 L425.5,215.0 L427.0,215.3 L428.5,215.5 L430.0,215.8 L431.5,216.1 L433.0,216.3 L434.5,216.6 L436.0,216.9 L437.5,217.1 L439.0,217.4 L440.5,217.6 L442.0,217.9 L443.5,216.8 L445.0,208.3 L446.5,186.3 L448.0,155.2 L449.5,132.5 L451.0,134.3 L452.5,159.4 L454.0,190.7 L455.5,211.7 L457.0,219.5 L458.5,220.8 L460.0,221.1 L461.5,221.3 L463.0,221.6 L464.5,221.9 L466.0,222.1 L467.5,222.4 L469.0,222.7 L470.5,222.9 L472.0,223.2 L473.5,223.5 L475.0,223.7 L476.5,224.0 L478.0,224.2 L479.5,224.5 L481.0,223.4 L482.5,215.4 L484.0,195.0 L485.5,167.0 L487.0,147.3 L488.5,150.0 L490.0,173.2 L491.5,201.2 L493.0,219.6 L494.5,226.3 L496.0,227.4 L497.5,227.7 L499.0,227.9 L500.5,228.2 L502.0,228.5 L503.5,228.7 L505.0,229.0 L506.5,229.3 L508.0,229.5 L509.5,229.8 L511.0,230.1 L512.5,230.3 L514.0,230.6 L515.5,230.8 L517.0,231.3 L518.5,231.2 L520.0,231.1 L521.5,230.9 L523.0,230.8 L524.5,230.6 L526.0,230.4 L527.5,230.1 L529.0,229.9 L530.5,229.6 L532.0,229.4 L533.5,229.1 L535.0,228.9 L536.5,228.6 L538.0,228.3 L539.5,228.1 L541.0,227.8 L542.5,227.5 L544.0,227.3 L545.5,227.0 L547.0,226.8 L548.5,226.5 L550.0,226.3 L551.5,226.1 L553.0,225.9 L554.5,225.7 L556.0,225.5 L557.5,225.4 L559.0,225.2 L560.5,225.1 L562.0,225.0 L563.5,224.9 L565.0,224.9 L566.5,224.8 L568.0,224.8 L569.5,224.8 L571.0,224.9 L572.5,224.9 L574.0,225.0 L575.5,225.1 L577.0,225.2 L578.5,225.3 L580.0,225.4 L581.5,225.5 L583.0,225.6 L584.5,225.6 L586.0,225.7 L587.5,225.8 L589.0,225.9 L590.5,226.0 L592.0,226.1 L593.5,226.1 L595.0,226.2 L596.5,226.2 L598.0,226.3 L599.5,226.3 L601.0,226.4 L602.5,226.4 L604.0,226.4 L605.5,226.4 L607.0,226.4 L608.5,226.4 L610.0,226.4 L611.5,226.4 L613.0,226.4 L614.5,226.3 L616.0,226.3 L617.5,226.3 L619.0,226.2 L620.5,226.1 L622.0,226.1 L623.5,226.0 L625.0,225.9 L626.5,225.8 L628.0,225.8 L629.5,225.7 L631.0,225.6 L632.5,225.5 L634.0,225.4 L635.5,225.3 L637.0,225.2 L638.5,225.1 L640.0,225.0 L641.5,224.9 L643.0,224.8 L644.5,224.8 L646.0,224.7 L647.5,224.6 L649.0,224.5 L650.5,224.5 L652.0,224.4 L653.5,224.3 L655.0,224.3 L656.5,224.3 L658.0,224.2 L659.5,224.2 L661.0,224.2 L662.5,224.2 L664.0,224.2 L665.5,224.2 L667.0,224.2 L668.5,224.2 L670.0,224.2 L671.5,224.3 L673.0,224.3 L674.5,224.4 L676.0,224.4 L677.5,224.5 L679.0,224.5 L680.5,224.6 L682.0,224.7 L683.5,224.8 L685.0,224.9 L686.5,225.0 L688.0,225.0 L689.5,225.1 L691.0,225.2 L692.5,225.3 L694.0,225.4 L695.5,225.5 L697.0,225.6 L698.5,225.7 L700.0,225.8 L701.5,225.9 L703.0,226.0 L704.5,226.0 L706.0,226.1 L707.5,226.2 L709.0,226.2 L710.5,226.3 L712.0,226.3 L713.5,226.4 L715.0,226.4 L716.5,226.4 L718.0,226.4 L719.5,226.4 L721.0,226.4 L722.5,226.4 L724.0,226.4 L725.5,226.4 L727.0,226.4 L728.5,226.3 L730.0,226.3 L731.5,226.2 L733.0,226.2 L734.5,226.1 L736.0,226.0 L737.5,226.0 L739.0,225.9 L740.5,225.8 L742.0,225.7 L743.5,225.6 L745.0,225.5 L746.5,225.4 L748.0,225.3 L749.5,225.2 L751.0,225.1 L752.5,225.1 L754.0,225.0 L755.5,224.9 L757.0,224.8 L758.5,224.7 L760.0,224.6 L761.5,224.6 L763.0,224.5 L764.5,224.4 L766.0,224.4 L767.5,224.3 L769.0,224.3 L770.5,224.2 L772.0,224.2 L773.5,224.2 L775.0,224.2 L776.5,224.2 L778.0,224.2 L779.5,224.2 L781.0,224.2 L782.5,224.2 L784.0,224.2 L785.5,224.3 L787.0,224.3 L788.5,224.4 L790.0,224.5"/>
+<circle class="dot s3f" cx="790.0" cy="98.0" r="4.5"/>
+<circle class="dot s1f" cx="790.0" cy="224.5" r="4.5"/>
+<circle class="dot s2f" cx="790.0" cy="244.3" r="4.5"/>
+<text class="lab" x="802" y="102.0">FSH</text>
+<text class="lab" x="802" y="222.5">Estradiol</text>
+<text class="lab" x="802" y="256.3">Progesterone</text>
+<text class="axis-t" x="60" y="79.0" text-anchor="end">Higher</text>
+<text class="axis-t" x="60" y="246" text-anchor="end">Lower</text>
+</svg></div>
+        <figcaption>Drawn from published descriptions of typical hormone patterns, not from one person's measurements, so the vertical scale has no units. FSH is a pituitary hormone that prods the ovaries; it rises as they respond less. Real patterns vary widely from woman to woman and month to month.<sup class="r"><a href="#s23">23</a></sup></figcaption>
+      </figure>
+      <div class="prose">
+        <p>This is also why a single blood test usually isn't useful. On any given day your levels can look normal, high or low. European endocrinology guidelines say hormone testing isn't needed to diagnose perimenopause or menopause in women over 45; your cycle pattern and symptoms tell the story.<sup class="r"><a href="#s4">4</a></sup> Testing can make sense for women under 45, or under 40, when other causes need to be ruled out.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOT FLASHES -->
+<section class="s" id="hotflashes">
+  <div class="wrap">
+    <div class="s-head">
+      <h2>Hot flashes start in the brain's temperature center and often last seven years or more</h2>
+    </div>
+    <div class="prose">
+      <p>A hot flash is a misfire in the hypothalamus, the small region at the base of the brain that keeps your body temperature in range. Estrogen normally keeps a group of nerve cells there in check. When estrogen falls, those cells grow larger and more active and send a chemical messenger called neurokinin B to the brain's thermostat.<sup class="r"><a href="#s24">24</a></sup> The thermostat reads this as overheating and dumps heat: blood vessels in the skin open, you flush and sweat, and your heart may race. Then you feel chilled as your body overcorrects.</p>
+    </div>
+    <figure style="margin-top:18px">
+      <div class="ft">Figure 2. The brain pathway that produces a hot flash, and where treatments act on it</div>
+      <div class="scroll-x">
+      <svg viewBox="0 10 900 230" role="img" aria-label="Falling estrogen releases the brake on a group of hypothalamic nerve cells, which send neurokinin B to the temperature center, which triggers flushing and sweating. Estrogen therapy restores the brake; fezolinetant and elinzanetant block the neurokinin message.">
+        <defs>
+          <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="arr-h"/></marker>
+        </defs>
+        <rect class="box" x="10" y="40" width="180" height="78" rx="10"/>
+        <text class="bt" x="100" y="72" text-anchor="middle">Estrogen falls</text>
+        <text class="bs" x="100" y="94" text-anchor="middle">ovaries make less</text>
+
+        <rect class="box-hl" x="246" y="40" width="190" height="78" rx="10"/>
+        <text class="bt" x="341" y="68" text-anchor="middle">Nerve cells speed up</text>
+        <text class="bs" x="341" y="88" text-anchor="middle">KNDy neurons in the</text>
+        <text class="bs" x="341" y="104" text-anchor="middle">hypothalamus</text>
+
+        <rect class="box" x="492" y="40" width="180" height="78" rx="10"/>
+        <text class="bt" x="582" y="68" text-anchor="middle">Thermostat</text>
+        <text class="bs" x="582" y="88" text-anchor="middle">reads the message</text>
+        <text class="bs" x="582" y="104" text-anchor="middle">as overheating</text>
+
+        <rect class="box" x="728" y="40" width="162" height="78" rx="10"/>
+        <text class="bt" x="809" y="68" text-anchor="middle">Heat release</text>
+        <text class="bs" x="809" y="88" text-anchor="middle">flushing, sweating,</text>
+        <text class="bs" x="809" y="104" text-anchor="middle">racing heart</text>
+
+        <line class="arr" x1="192" y1="79" x2="242" y2="79" marker-end="url(#ah)"/>
+        <text class="al" x="217" y="30" text-anchor="middle">lifts the brake</text>
+        <line class="arr" x1="438" y1="79" x2="488" y2="79" marker-end="url(#ah)"/>
+        <text class="al" x="463" y="30" text-anchor="middle">neurokinin B</text>
+        <line class="arr" x1="674" y1="79" x2="724" y2="79" marker-end="url(#ah)"/>
+        <text class="al" x="699" y="30" text-anchor="middle">triggers</text>
+
+        <line class="tx" x1="217" y1="84" x2="217" y2="170"/>
+        <circle class="tx-dot" cx="217" cy="79" r="4"/>
+        <text class="tx-t" x="217" y="190" text-anchor="middle">Estrogen therapy</text>
+        <text class="tx-s" x="217" y="208" text-anchor="middle">puts the brake back on</text>
+
+        <line class="tx" x1="463" y1="84" x2="463" y2="170"/>
+        <circle class="tx-dot" cx="463" cy="79" r="4"/>
+        <text class="tx-t" x="463" y="190" text-anchor="middle">Fezolinetant, elinzanetant</text>
+        <text class="tx-s" x="463" y="208" text-anchor="middle">block the message where</text>
+        <text class="tx-s" x="463" y="224" text-anchor="middle">it lands (non-hormonal)</text>
+      </svg>
+      </div>
+      <figcaption>KNDy is short for the three chemical messengers these cells make. The newer non-hormonal medicines were designed directly from this research.<sup class="r"><a href="#s24">24</a>,<a href="#s41">41</a></sup></figcaption>
+    </figure>
+    <div class="prose" style="margin-top:18px">
+      <p>Hot flashes last far longer than the six months to two years that older guidance suggested. In a large U.S. study that followed women through the transition for up to 17 years, half of those with frequent hot flashes had them for more than seven years, and they typically kept going about four and a half years after the final period. Women whose hot flashes began early in perimenopause had them longest, often for more than a decade. Black women had them longer than any other group studied.<sup class="r"><a href="#s20">20</a></sup></p>
+      <p>Up to 80% of women get hot flashes at some point. Frequent ones are linked to poorer sleep and mood and to less favorable blood pressure and cholesterol, which is one more reason to treat them and to get your heart health checked.<sup class="r"><a href="#s17">17</a>,<a href="#s20">20</a></sup></p>
+    </div>
+  </div>
+</section>
+
+<!-- BRAIN -->
+<section class="s" id="brain">
+  <div class="wrap">
+    <div class="s-head">
+      <h2>The brain adapts to falling estrogen, and memory and mood can dip during the transition</h2>
+    </div>
+    <div class="prose">
+      <p>Estrogen acts throughout the brain, including the areas that handle memory, attention, mood, sleep and temperature. Brain imaging published in 2024 found that as women move through the transition, their brains carry more estrogen receptors, which the researchers read as the brain working to capture what estrogen remains. Women with higher receptor levels in memory regions tended to score lower on memory tests.<sup class="r"><a href="#s25">25</a></sup></p>
+      <p>Brain fog is real, and for most women it's temporary. In a long-term study of more than 2,000 midlife women, the normal improvement people show when they repeat a memory or speed test stalled during perimenopause, then returned to its usual pace after menopause.<sup class="r"><a href="#s26">26</a></sup></p>
+      <p>Perimenopause is also a recognized window of higher risk for depression, including for women who have never been depressed before. Women with a past history of depression have a higher chance of it returning in these years, and night sweats that break up sleep make everything harder.<sup class="r"><a href="#s14">14</a></sup> Low mood that lasts more than a couple of weeks or gets in the way of daily life deserves treatment in its own right, and antidepressants and talk therapy remain the first-line treatments.<sup class="r"><a href="#s1">1</a>,<a href="#s14">14</a></sup></p>
+    </div>
+    <div class="callout teal" style="margin-top:16px">If you ever have thoughts of harming yourself, call or text 988 in the U.S. to reach the Suicide and Crisis Lifeline, any time of day.</div>
+  </div>
+</section>
+
+<!-- BODY -->
+<section class="s" id="body">
+  <div class="wrap">
+    <div class="s-head">
+      <h2>Many of the body changes linked to menopause cluster in the few years around the final period</h2>
+    </div>
+    <div class="prose">
+      <p>Estrogen helps maintain bone, muscle, blood vessels, skin and the tissues of the vagina and bladder. When it falls, change in those tissues speeds up on a fairly predictable schedule. Knowing the schedule tells you when prevention pays off most.</p>
+    </div>
+    <figure style="margin-top:18px">
+      <div class="ft">Figure 3. Approximate timing of major changes relative to the final menstrual period, in years</div>
+      <div class="legend" aria-hidden="true">
+        <span><i class="sq" style="background:#56636f"></i>Perimenopause</span>
+        <span><i class="sq" style="background:var(--s1)"></i>Change in the body</span>
+        <span><i class="sq" style="background:var(--s3)"></i>Treatment timing</span>
+        <span><i class="sq" style="background:var(--s1);opacity:.32"></i>For some women</span>
+      </div>
+      <div class="scroll-x"><svg viewBox="0 0 900 408" role="img" aria-label="Timeline relative to the final period: perimenopause starts about 7 years before; hot flashes typically span from about 3 years before to 4.5 years after; bone loss and insulin resistance change fastest from 1 year before to 2 years after; skin collagen falls fastest in the first 5 years after; vaginal and bladder changes progress after menopause; the window to start hormone therapy runs to 10 years after menopause.">
+<line class="grid" x1="300.0" y1="26" x2="300.0" y2="360"/><text class="axis-t" x="300.0" y="378" text-anchor="middle">−8</text><line class="grid" x1="362.2" y1="26" x2="362.2" y2="360"/><text class="axis-t" x="362.2" y="378" text-anchor="middle">−6</text><line class="grid" x1="424.4" y1="26" x2="424.4" y2="360"/><text class="axis-t" x="424.4" y="378" text-anchor="middle">−4</text><line class="grid" x1="486.7" y1="26" x2="486.7" y2="360"/><text class="axis-t" x="486.7" y="378" text-anchor="middle">−2</text><line class="grid" x1="548.9" y1="26" x2="548.9" y2="360"/><text class="axis-t" x="548.9" y="378" text-anchor="middle">0</text><line class="grid" x1="611.1" y1="26" x2="611.1" y2="360"/><text class="axis-t" x="611.1" y="378" text-anchor="middle">+2</text><line class="grid" x1="673.3" y1="26" x2="673.3" y2="360"/><text class="axis-t" x="673.3" y="378" text-anchor="middle">+4</text><line class="grid" x1="735.6" y1="26" x2="735.6" y2="360"/><text class="axis-t" x="735.6" y="378" text-anchor="middle">+6</text><line class="grid" x1="797.8" y1="26" x2="797.8" y2="360"/><text class="axis-t" x="797.8" y="378" text-anchor="middle">+8</text><line class="grid" x1="860.0" y1="26" x2="860.0" y2="360"/><text class="axis-t" x="860.0" y="378" text-anchor="middle">+10</text><line class="fmp" x1="548.9" y1="18" x2="548.9" y2="360"/><text class="fmp-t" x="554.9" y="26">Final period</text><text class="axis-t" x="580.0" y="398" text-anchor="middle">Years before (−) and after (+) the final menstrual period</text><text class="row-t" x="286" y="72.0" text-anchor="end">Perimenopause</text><g class="tip-target" tabindex="0" role="button" aria-label="Perimenopause: cycle changes usually begin 6 to 8 years before the final period. The late stage, with gaps of 60 days or more, typically starts about 2 years before it." data-tip="Perimenopause: cycle changes usually begin 6 to 8 years before the final period. The late stage, with gaps of 60 days or more, typically starts about 2 years before it."><rect class="hit" x="327.1" y="48.0" width="225.8" height="40"/><rect class="bar seg-peri" x="332.1" y="59.0" width="153.6" height="18" rx="4"/><text class="in-t" x="340.1" y="72.0">Early transition</text><rect class="bar seg-peri2" x="487.7" y="59.0" width="60.2" height="18" rx="4"/><text class="in-t" x="495.7" y="72.0">Late</text></g><text class="row-t" x="286" y="116.0" text-anchor="end">Hot flashes (typical span)</text><g class="tip-target" tabindex="0" role="button" aria-label="Hot flashes: half of women with frequent hot flashes have them for more than 7 years, typically continuing about 4.5 years after the final period. Women whose hot flashes start early often have them for more than a decade (faded part)." data-tip="Hot flashes: half of women with frequent hot flashes have them for more than 7 years, typically continuing about 4.5 years after the final period. Women whose hot flashes start early often have them for more than a decade (faded part)."><rect class="hit" x="451.6" y="92.0" width="412.4" height="40"/><rect class="bar seg-c" x="456.6" y="103.0" width="231.3" height="18" rx="4"/><rect class="bar seg-c fade" x="689.9" y="103.0" width="169.1" height="18" rx="4"/></g><text class="row-t" x="286" y="160.0" text-anchor="end">Fastest bone loss</text><g class="tip-target" tabindex="0" role="button" aria-label="Bone: loss speeds up about 1 year before the final period and is fastest through 2 years after. About 70% of a decade's spine bone loss happens here." data-tip="Bone: loss speeds up about 1 year before the final period and is fastest through 2 years after. About 70% of a decade's spine bone loss happens here."><rect class="hit" x="513.8" y="136.0" width="101.3" height="40"/><rect class="bar seg-c" x="518.8" y="147.0" width="91.3" height="18" rx="4"/></g><text class="note-t" x="619.1" y="160.0">about 70% of a decade's spine loss</text><text class="row-t" x="286" y="204.0" text-anchor="end">Insulin resistance rises fastest</text><g class="tip-target" tabindex="0" role="button" aria-label="Metabolism: insulin resistance climbs fastest in the same window, about twice as fast as in later postmenopause." data-tip="Metabolism: insulin resistance climbs fastest in the same window, about twice as fast as in later postmenopause."><rect class="hit" x="513.8" y="180.0" width="101.3" height="40"/><rect class="bar seg-c" x="518.8" y="191.0" width="91.3" height="18" rx="4"/></g><text class="row-t" x="286" y="248.0" text-anchor="end">Fastest skin collagen loss</text><g class="tip-target" tabindex="0" role="button" aria-label="Skin: up to 30% of skin collagen can be lost in the first 5 years after menopause, then about 2% a year." data-tip="Skin: up to 30% of skin collagen can be lost in the first 5 years after menopause, then about 2% a year."><rect class="hit" x="544.9" y="224.0" width="163.6" height="40"/><rect class="bar seg-c" x="549.9" y="235.0" width="153.6" height="18" rx="4"/></g><text class="note-t" x="712.4" y="248.0">up to 30% in 5 years</text><text class="row-t" x="286" y="292.0" text-anchor="end">Vaginal and bladder changes</text><g class="tip-target" tabindex="0" role="button" aria-label="Genitourinary syndrome of menopause: dryness, painful sex, urgency and repeat infections tend to persist or worsen over time without treatment." data-tip="Genitourinary syndrome of menopause: dryness, painful sex, urgency and repeat infections tend to persist or worsen over time without treatment."><rect class="hit" x="544.9" y="268.0" width="319.1" height="40"/><rect class="bar seg-c" x="549.9" y="279.0" width="309.1" height="18" rx="4"/><polygon class="arrowhead" points="859.0,279.0 869.0,288.0 859.0,297.0"/></g><text class="row-t" x="286" y="336.0" text-anchor="end">Window to start hormone therapy</text><g class="tip-target" tabindex="0" role="button" aria-label="Hormone therapy: guidelines favor starting before age 60 or within 10 years of menopause. It can also be used during perimenopause (faded part)." data-tip="Hormone therapy: guidelines favor starting before age 60 or within 10 years of menopause. It can also be used during perimenopause (faded part)."><rect class="hit" x="451.6" y="312.0" width="412.4" height="40"/><rect class="bar seg-ht fade" x="456.6" y="323.0" width="91.3" height="18" rx="4"/><rect class="bar seg-ht" x="549.9" y="323.0" width="309.1" height="18" rx="4"/></g>
+</svg></div>
+      <figcaption>Bars show typical windows reported by long-term studies; your own timing may differ. Hover over or tap a bar for details.<sup class="r"><a href="#s1">1</a>,<a href="#s20">20</a>,<a href="#s22">22</a>,<a href="#s27">27</a>,<a href="#s28">28</a>,<a href="#s31">31</a></sup></figcaption>
+      <details>
+        <summary>Show this figure as a table</summary>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th scope="col">Change</th><th scope="col">Years relative to final period</th><th scope="col">Detail</th></tr></thead>
+          <tbody><tr><th scope='row'>Perimenopause</th><td>-7 to -2, -2 to +0</td><td>cycle changes usually begin 6 to 8 years before the final period. The late stage, with gaps of 60 days or more, typically starts about 2 years before it.</td></tr><tr><th scope='row'>Hot flashes (typical span)</th><td>-3 to +4.5</td><td>half of women with frequent hot flashes have them for more than 7 years, typically continuing about 4.5 years after the final period. Women whose hot flashes start early often have them for more than a decade (faded part).</td></tr><tr><th scope='row'>Fastest bone loss</th><td>-1 to +2</td><td>loss speeds up about 1 year before the final period and is fastest through 2 years after. About 70% of a decade's spine bone loss happens here.</td></tr><tr><th scope='row'>Insulin resistance rises fastest</th><td>-1 to +2</td><td>insulin resistance climbs fastest in the same window, about twice as fast as in later postmenopause.</td></tr><tr><th scope='row'>Fastest skin collagen loss</th><td>+0 to +5</td><td>up to 30% of skin collagen can be lost in the first 5 years after menopause, then about 2% a year.</td></tr><tr><th scope='row'>Vaginal and bladder changes</th><td>+0 to +10</td><td>dryness, painful sex, urgency and repeat infections tend to persist or worsen over time without treatment.</td></tr><tr><th scope='row'>Window to start hormone therapy</th><td>+0 to +10</td><td>guidelines favor starting before age 60 or within 10 years of menopause. It can also be used during perimenopause (faded part).</td></tr></tbody>
+        </table></div>
+      </details>
+    </figure>
+
+    <figure style="margin-top:18px" id="bone-fig">
+      <div class="ft">Figure 4. Share of 10-year spine bone loss that occurs in the three years around the final period</div>
+      <div class="seg" role="img" aria-label="Of a 10.6% average loss in spine bone density over ten years, 7.4 percentage points, about 70%, occurred from one year before to two years after the final period; the remaining 30% was spread over the other seven years.">
+        <div class="p1 tip-target" tabindex="0" style="flex:70" data-tip="1 year before to 2 years after the final period: 7.4 percentage points of a 10.6% total loss (about 70%).">70%</div>
+        <div class="p2 tip-target" tabindex="0" style="flex:30" data-tip="The other 7 years of the decade: 3.2 percentage points (about 30%).">30%</div>
+      </div>
+      <div class="legend">
+        <span><i class="sq" style="background:var(--s1)"></i>3 years: 1 year before to 2 years after the final period</span>
+        <span><i class="sq" style="background:var(--s-rest)"></i>The other 7 years of the decade</span>
+      </div>
+      <figcaption>In a multiethnic U.S. study, women lost an average of 10.6% of their lumbar spine bone density over the ten years spanning their final period. Of that, 7.4 percentage points came in the three-year window shown in blue.<sup class="r"><a href="#s27">27</a></sup></figcaption>
+    </figure>
+
+    <div class="cards" style="margin-top:18px">
+      <div class="card"><h3>Bone</h3><p>Bone loss speeds up about a year before the final period and is fastest for the two years after. Women who lose bone faster in this window go on to have more fractures, regardless of how dense their bones were to begin with.<sup class="r"><a href="#s27">27</a>,<a href="#s29">29</a></sup></p></div>
+      <div class="card"><h3>Muscle and joints</h3><p>Muscle mass declines and body fat rises during the transition. More than 70% of women report joint or muscle pain at some point, and about a quarter find it disabling. Frozen shoulder is also more common in these years. Doctors have started calling this cluster the musculoskeletal syndrome of menopause.<sup class="r"><a href="#s17">17</a>,<a href="#s30">30</a></sup></p></div>
+      <div class="card"><h3>Heart and metabolism</h3><p>LDL cholesterol rises during the transition faster than aging alone would explain, and fat shifts toward the belly and around the organs. Insulin resistance climbs fastest in the same few years. Heart disease is the leading cause of death in women, and this is when the risk starts to climb.<sup class="r"><a href="#s17">17</a>,<a href="#s28">28</a></sup></p></div>
+      <div class="card"><h3>Skin</h3><p>Skin can lose up to 30% of its collagen in the first five years after menopause, then about 2% a year. It becomes thinner and drier, and wounds heal more slowly. In studies, estrogen therapy slowed this loss.<sup class="r"><a href="#s31">31</a></sup></p></div>
+      <div class="card"><h3>Vagina and bladder</h3><p>Thinning tissue can cause dryness, painful sex, burning, urgency and repeat urinary tract infections. Doctors call this genitourinary syndrome of menopause. Unlike hot flashes, it tends to persist or worsen without treatment.<sup class="r"><a href="#s5">5</a></sup></p></div>
+      <div class="card"><h3>Biological aging</h3><p>Studies that estimate biological age from chemical marks on DNA find that an earlier menopause goes along with faster aging of blood cells, and chronic insomnia does too. Women who had used hormone therapy looked biologically younger in one tissue. These are observational findings, which can't prove cause and effect.<sup class="r"><a href="#s32">32</a></sup></p></div>
+    </div>
+  </div>
+</section>
+
+<div class="part" id="part2">
+  <div class="wrap">
+    <div class="tag">Part 2 · What helps</div>
+    <p>The treatments and habits with the strongest evidence, organized by what you want help with. Evidence ratings come from the guidelines themselves.</p>
+  </div>
+</div>
+
+<!-- TRUSTED SOURCES -->
+<section class="s" id="trust">
+  <div class="wrap">
+    <div class="s-head">
+      <h2>Guidelines from professional medical societies are the most reliable source of menopause advice</h2>
+    </div>
+    <div class="prose">
+      <p>Menopause care has become a crowded market. Social media is full of confident claims, and some clinics sell treatments with little evidence behind them. The most dependable answers come from guidelines written by expert panels that grade the strength of the evidence and disclose conflicts of interest. These are the ones this page relies on.</p>
+    </div>
+    <div class="cards" style="margin-top:18px">
+      <div class="card"><h3>The Menopause Society</h3><p>The U.S. society of menopause specialists. Its position statements on hormone therapy and non-hormonal treatment are the field's reference points, and its site has free patient handouts and a directory of certified clinicians.<sup class="r"><a href="#s2">2</a>,<a href="#s3">3</a>,<a href="#s16">16</a></sup></p><a class="more" href="https://menopause.org">menopause.org</a></div>
+      <div class="card"><h3>American College of Obstetricians and Gynecologists</h3><p>Published its first full update on menopause symptoms since 2014 in October 2026, covering hot flashes, sleep and mood. A separate guideline on vaginal and urinary symptoms is planned for 2027.<sup class="r"><a href="#s1">1</a></sup></p><a class="more" href="https://www.acog.org/news/2026/10/acog-expands-recommendations-for-management-of-menopause-symptoms/">ACOG announcement</a></div>
+      <div class="card"><h3>European Society of Endocrinology</h3><p>A 2025 guideline on perimenopause and menopause, endorsed by the U.S. Endocrine Society. It's free to read and grades every recommendation.<sup class="r"><a href="#s4">4</a></sup></p><a class="more" href="https://doi.org/10.1093/ejendo/lvaf206">Read the guideline</a></div>
+      <div class="card"><h3>American Urological Association and partners</h3><p>A 2025 guideline on vaginal and urinary symptoms, written with urogynecology specialists and endorsed by the Menopause Society.<sup class="r"><a href="#s5">5</a></sup></p><a class="more" href="https://www.auanet.org/guidelines-and-quality/guidelines/genitourinary-syndrome-of-menopause">Read the guideline</a></div>
+      <div class="card"><h3>U.S. Preventive Services Task Force</h3><p>An independent panel that decides which screening tests are worth doing, such as when to get a bone density scan.<sup class="r"><a href="#s8">8</a></sup></p><a class="more" href="https://www.uspreventiveservicestaskforce.org">uspreventiveservicestaskforce.org</a></div>
+      <div class="card"><h3>Official drug labels</h3><p>The FDA-approved prescribing information for any medicine, including the updated hormone therapy labels, is free on DailyMed.</p><a class="more" href="https://dailymed.nlm.nih.gov">dailymed.nlm.nih.gov</a></div>
+    </div>
+    <div class="callout" style="margin-top:18px">Be wary of anyone who sells what they recommend, such as compounded hormones, hormone pellets, saliva tests or supplements. Be equally wary of sweeping claims in either direction, whether that hormones prevent all age-related disease or that they're dangerous for everyone.</div>
+  </div>
+</section>
+
+<!-- TREATMENT GUIDE -->
+<section class="s" id="options">
+  <div class="wrap">
+    <div class="s-head">
+      <h2>The right treatment depends on your main symptom and your health history</h2>
+      <p class="muted">Start with the row that matches what bothers you most. Each row links to more detail.</p>
+    </div>
+    <div class="ev-key"><span>Evidence for the first-line option:</span>
+      <span class="ev e3"><b>●●●</b> Strong</span>
+      <span class="ev e2"><b>●●○</b> Moderate</span>
+      <span class="ev e1"><b>●○○</b> Limited</span>
+    </div>
+    <div class="tbl-wrap" style="margin-top:10px">
+      <table>
+        <thead><tr><th scope="col">If your main concern is</th><th scope="col">Best-supported first option</th><th scope="col">Other options with evidence</th><th scope="col">Evidence</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Hot flashes and night sweats</th><td class="first">Hormone therapy, if you're under 60 or within 10 years of menopause and have no reason to avoid it. <a href="#hormones">More</a></td><td>Neurokinin blockers (fezolinetant, elinzanetant), low-dose antidepressants, gabapentin, cognitive behavioral therapy, clinical hypnosis, and weight loss if you carry extra weight. <a href="#nonhormonal">More</a></td><td><span class="ev e3"><b>●●●</b> Strong</span></td></tr>
+          <tr><th scope="row">Sleep broken by night sweats</th><td class="first">Hormone therapy, or a neurokinin blocker if hormones aren't for you.</td><td>Cognitive behavioral therapy, mindfulness programs, exercise.</td><td><span class="ev e3"><b>●●●</b> Strong</span></td></tr>
+          <tr><th scope="row">Insomnia without night sweats</th><td class="first">Cognitive behavioral therapy for insomnia (CBT-I), the first-line treatment for chronic insomnia in adults. <a href="#sleep">More</a></td><td>Short-term sleep medicine, decided with your clinician.</td><td><span class="ev e3"><b>●●●</b> Strong</span></td></tr>
+          <tr><th scope="row">Low mood or depression</th><td class="first">Antidepressants and talk therapy, following standard depression care. <a href="#brain">More</a></td><td>Exercise and mindfulness for mood. Evidence is insufficient to use hormone therapy to treat depression itself.</td><td><span class="ev e3"><b>●●●</b> Strong</span></td></tr>
+          <tr><th scope="row">Vaginal dryness, painful sex, bladder urgency or repeat UTIs</th><td class="first">Low-dose vaginal estrogen. <a href="#vaginal">More</a></td><td>Vaginal DHEA (prasterone), ospemifene, moisturizers and lubricants, pelvic floor physical therapy.</td><td><span class="ev e3"><b>●●●</b> Strong</span></td></tr>
+          <tr><th scope="row">Low sexual desire that bothers you, after menopause</th><td class="first">Testosterone through the skin, kept at levels normal for younger women. <a href="#desire">More</a></td><td>Treating vaginal pain, mood and relationship factors first or alongside.</td><td><span class="ev e2"><b>●●○</b> Moderate</span></td></tr>
+          <tr><th scope="row">Irregular or heavy periods in perimenopause</th><td class="first">Hormonal birth control, such as a low-dose pill or a levonorgestrel IUD. <a href="#perimenopause">More</a></td><td>A check for other causes of heavy bleeding.</td><td><span class="ev e2"><b>●●○</b> Moderate</span></td></tr>
+          <tr><th scope="row">Joint and muscle aches</th><td class="first">Strength training and staying active, plus a check for arthritis or other causes. <a href="#muscle">More</a></td><td>Research on this symptom is still catching up.</td><td><span class="ev e1"><b>●○○</b> Limited</span></td></tr>
+          <tr><th scope="row">Brain fog</th><td class="first">Treating sleep, mood and hot flashes. For most women it improves after menopause. <a href="#brain">More</a></td><td>Hormone therapy is not recommended for preventing memory decline.</td><td><span class="ev e1"><b>●○○</b> Limited</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted" style="margin-top:8px">Sources: ACOG 2026, Menopause Society 2022 and 2023, European Society of Endocrinology 2025, AUA 2025, American College of Physicians 2016, global testosterone consensus 2019.<sup class="r"><a href="#s1">1</a>,<a href="#s2">2</a>,<a href="#s3">3</a>,<a href="#s4">4</a>,<a href="#s5">5</a>,<a href="#s10">10</a>,<a href="#s11">11</a></sup></p>
+  </div>
+</section>
+
+<!-- HORMONE THERAPY -->
+<section class="s" id="hormones">
+  <div class="wrap">
+    <div class="s-head">
+      <h2>For most healthy women under 60, hormone therapy is the most effective treatment for hot flashes</h2>
+    </div>
+    <div class="prose">
+      <p>Menopausal hormone therapy replaces some of the estrogen your ovaries stop making. If you still have a uterus, you also take a progestogen (progesterone or a similar hormone), because estrogen alone can overstimulate the uterine lining and raise the risk of uterine cancer. If you've had a hysterectomy, you take estrogen alone.<sup class="r"><a href="#s2">2</a>,<a href="#s4">4</a></sup></p>
+      <p>Nothing else works as well for hot flashes, night sweats and the sleep they disrupt. ACOG gives this a strong recommendation, with the advice to start before age 60 or within 10 years of menopause.<sup class="r"><a href="#s1">1</a></sup> Hormone therapy also prevents bone loss and reduces fractures.<sup class="r"><a href="#s2">2</a>,<a href="#s4">4</a></sup> One alternative pairs estrogen with bazedoxifene, which protects the uterine lining in place of a progestogen; ACOG suggests it as an option.<sup class="r"><a href="#s1">1</a></sup></p>
+    </div>
+
+    <div class="sub-s">
+      <h3>The fear of hormone therapy traces back to a 2002 study of mostly older women</h3>
+      <div class="prose">
+        <p>In 2002, a large federally funded trial stopped its estrogen-plus-progestin arm early because women taking the pills had more breast cancer, heart attacks, strokes and blood clots. Prescriptions collapsed, from about 22% of women to about 4%, and the FDA put its most serious boxed warning on every estrogen product.<sup class="r"><a href="#s42">42</a></sup></p>
+        <p>Later analyses told a story that depended on age. Nearly two-thirds of the women in that trial were 60 or older, many years past menopause.<sup class="r"><a href="#s1">1</a></sup> A 2025 reanalysis found that for women in their 50s with hot flashes, hormone therapy relieved symptoms without raising heart disease risk, while women who started in their 70s had a clear increase. The picture for women in their 60s remains uncertain.<sup class="r"><a href="#s21">21</a></sup></p>
+      </div>
+    </div>
+
+    <div class="sub-s" id="ht-label">
+      <h3>U.S. regulators began removing most of the boxed warning from hormone therapy in late 2025</h3>
+      <ol class="tl">
+        <li><div class="d">November 10, 2025</div><p>The FDA announced it would remove the boxed warning language on heart disease, breast cancer and probable dementia from hormone therapy products.<sup class="r"><a href="#s6">6</a>,<a href="#s7">7</a></sup></p></li>
+        <li><div class="d">February 12, 2026</div><p>The first six products received updated labels, including an estradiol gel, a progesterone capsule and a vaginal estrogen ring.<sup class="r"><a href="#s6">6</a></sup></p></li>
+        <li><div class="d">October 15, 2026</div><p>ACOG published its new guideline on hot flashes, sleep and mood, which notes the label changes and supports starting therapy before 60 or within 10 years of menopause.<sup class="r"><a href="#s1">1</a></sup></p></li>
+        <li><div class="d">October 30, 2026</div><p>Three estradiol patches received updated labels. Twenty-nine companies have submitted changes, so more labels will follow.<sup class="r"><a href="#s6">6</a></sup></p></li>
+      </ol>
+      <div class="prose">
+        <p>One warning stays in place: women with a uterus need a progestogen along with estrogen to protect against uterine cancer.<sup class="r"><a href="#s7">7</a></sup> The FDA has also said it is exploring making vaginal estrogen available without a prescription.<sup class="r"><a href="#s6">6</a></sup></p>
+        <p>The change has supporters and critics. Many gynecologists say the old warning scared away women who stood to benefit. Critics, including some researchers who led the original trial, say the FDA skipped its usual independent advisory review, and they caution that claims of broad disease prevention go beyond what trials have shown.<sup class="r"><a href="#s7">7</a></sup> The professional guidelines kept their core advice: hormone therapy is for symptoms and bone protection, started before 60 or within 10 years of menopause, with the decision made one woman at a time.<sup class="r"><a href="#s1">1</a>,<a href="#s4">4</a></sup></p>
+      </div>
+    </div>
+
+    <div class="sub-s" id="ht-age">
+      <h3>Age and time since menopause change the balance of benefits and risks</h3>
+      <div class="zones">
+        <div class="zone z1"><div class="bar-top"></div><div class="lbl">Under 60, or within 10 years</div><h3>Benefits outweigh risks for most healthy women with symptoms</h3><p>This is the group the guidelines most clearly support. Heart risk did not rise when women in their 50s started therapy.<sup class="r"><a href="#s2">2</a>,<a href="#s21">21</a></sup></p></div>
+        <div class="zone z2"><div class="bar-top"></div><div class="lbl">60 to 69, or 10 to 20 years out</div><h3>Starting is a closer call that needs an individual decision</h3><p>Absolute risks of heart disease, stroke, clots and dementia are higher when therapy starts later. Guidelines advise caution.<sup class="r"><a href="#s2">2</a>,<a href="#s21">21</a></sup></p></div>
+        <div class="zone z3"><div class="bar-top"></div><div class="lbl">70 and older</div><h3>Starting hormone therapy at this age is not advised</h3><p>Women who began in their 70s had more heart disease, and starting at 65 or older raised dementia risk in trials.<sup class="r"><a href="#s21">21</a>,<a href="#s2">2</a></sup></p></div>
+      </div>
+      <p class="small" style="margin-top:10px;max-width:75ch">These zones are about starting. Continuing is a separate question: there's no rule that you must stop at 65. Guidelines say to revisit the decision regularly, weighing your symptoms, bone health and personal risks.<sup class="r"><a href="#s2">2</a>,<a href="#s4">4</a></sup></p>
+    </div>
+
+    <div class="sub-s" id="ht-forms">
+      <h3>Patches and gels avoid the small rise in blood clot risk seen with estrogen pills</h3>
+      <div class="prose">
+        <p>Estrogen taken by mouth passes through the liver first, which raises clotting factors. In a study of more than 80,000 women who had a blood clot, estrogen pills were linked to about nine extra clots per 10,000 women per year, while patches and gels showed no increase.<sup class="r"><a href="#s33">33</a></sup> Guidelines favor patches or gels for women with migraine with aura, diabetes, high blood pressure or a past clot, when hormone therapy is used at all.<sup class="r"><a href="#s4">4</a></sup></p>
+        <p>Body-identical hormones are available as regular FDA-approved prescriptions. Estradiol is the same estrogen the ovaries make, and micronized progesterone is the same progesterone. Micronized progesterone doesn't appear to raise clot risk and may carry less breast cancer risk than older synthetic progestins, although that evidence comes from observational studies.<sup class="r"><a href="#s34">34</a>,<a href="#s35">35</a></sup> It's usually taken at bedtime because it can make you drowsy, and the common capsule contains peanut oil.<sup class="r"><a href="#s2">2</a></sup></p>
+        <p>Custom-compounded hormones, often marketed as bioidentical, are a different product. They aren't FDA-approved or tested for consistent dosing, and every major society recommends approved products instead. Saliva tests should not be used to set doses.<sup class="r"><a href="#s2">2</a></sup></p>
+      </div>
+    </div>
+
+    <div class="sub-s" id="ht-breast">
+      <h3>The breast cancer risk from hormone therapy is small and depends on the type of therapy</h3>
+      <div class="prose">
+        <p>With combined estrogen and progestogen, the added risk is rare: fewer than one extra breast cancer per 1,000 women per year of use, which is less than the risk linked to drinking two glasses of wine a day.<sup class="r"><a href="#s35">35</a></sup> In the large trial, women who took estrogen alone after a hysterectomy developed fewer breast cancers than women on placebo, and fewer died of breast cancer over long-term follow-up.<sup class="r"><a href="#s35">35</a></sup> Risk appears to rise with longer use, which is one reason the decision gets revisited over time.<sup class="r"><a href="#s2">2</a></sup></p>
+      </div>
+    </div>
+
+    <div class="sub-s" id="ht-prevent">
+      <h3>Hormone therapy is not recommended for preventing dementia or heart disease</h3>
+      <div class="prose">
+        <p>European guidelines and the U.S. Preventive Services Task Force both advise against taking hormone therapy only to prevent chronic disease.<sup class="r"><a href="#s4">4</a>,<a href="#s46">46</a></sup> For the brain, starting at 65 or older raised dementia risk in trials, while women who used it for a few years right after menopause showed neither harm nor benefit to thinking skills ten years later.<sup class="r"><a href="#s36">36</a></sup> For the heart, starting in your 50s doesn't appear to raise risk, but it hasn't been proven to lower it either.<sup class="r"><a href="#s21">21</a>,<a href="#s4">4</a></sup></p>
+        <p>Bone is the exception. Hormone therapy prevents bone loss and fractures, and European guidelines say it can be considered for bone protection in women under 60 even without hot flashes.<sup class="r"><a href="#s4">4</a></sup></p>
+      </div>
+    </div>
+
+    <div class="sub-s" id="ht-avoid">
+      <h3>Some women should not take hormone therapy that circulates through the body</h3>
+      <div class="twocol">
+        <div class="card"><p>Unexplained vaginal bleeding, breast cancer or another estrogen-sensitive cancer, active liver disease, or a possible pregnancy.<sup class="r"><a href="#s2">2</a>,<a href="#s1">1</a></sup></p></div>
+        <div class="card"><p>A past heart attack, stroke or blood clot, or an inherited clotting disorder. Low-dose vaginal estrogen is often still possible, decided with your care team.<sup class="r"><a href="#s2">2</a>,<a href="#s5">5</a></sup></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERIMENOPAUSE -->
+<section class="s" id="perimenopause">
+  <div class="wrap">
+    <div class="s-head">
+      <h2>During perimenopause, some birth control methods treat symptoms and prevent pregnancy at the same time</h2>
+    </div>
+    <div class="prose">
+      <p>Hormone therapy uses lower doses than birth control and won't prevent pregnancy.<sup class="r"><a href="#s43">43</a></sup> If you still need contraception, a low-dose birth control pill can steady the hormonal swings and ease hot flashes, as long as you don't smoke and have no heart or clotting risks.<sup class="r"><a href="#s39">39</a></sup></p>
+      <p>A levonorgestrel IUD is another option. It lightens heavy periods and prevents pregnancy, and if you add estrogen for hot flashes, it also protects the uterine lining. ACOG describes this as an off-label use, with the IUD replaced after five years.<sup class="r"><a href="#s39">39</a>,<a href="#s1">1</a></sup></p>
+      <p>Very heavy bleeding, bleeding between periods, and any bleeding after you've gone 12 months without a period should be checked by a clinician.</p>
+    </div>
+  </div>
+</section>
+
+<!-- VAGINAL -->
+<section class="s" id="vaginal">
+  <div class="wrap">
+    <div class="s-head">
+      <h2>Vaginal and urinary symptoms respond well to low-dose vaginal estrogen, which is safe for most women</h2>
+    </div>
+    <div class="prose">
+      <p>Low-dose vaginal estrogen comes as a cream, tablet, insert or ring. So little reaches the bloodstream that it doesn't need a progestogen, and routine checks of the uterine lining aren't required. The 2025 urology and urogynecology guideline found no evidence linking it to breast cancer and recommends it to reduce repeat urinary tract infections. For women with a history of breast cancer, it can be considered together with the cancer care team.<sup class="r"><a href="#s5">5</a>,<a href="#s2">2</a></sup></p>
+      <p>Non-estrogen prescriptions include vaginal DHEA (prasterone) and ospemifene, a daily pill. Over-the-counter moisturizers and lubricants help with comfort, and pelvic floor physical therapy helps when muscles are part of the problem. Vaginal laser treatments aren't considered standard care.<sup class="r"><a href="#s5">5</a></sup></p>
+    </div>
+    <div class="sub-s" id="desire">
+      <h3>Testosterone can help low sexual desire after menopause, and that is its only evidence-based use</h3>
+      <div class="prose">
+        <p>An international consensus of medical societies found that testosterone improves desire, arousal and satisfaction in postmenopausal women whose low desire causes them distress, when it's given through the skin at doses that keep blood levels in the normal range for younger women. Safety data don't go beyond about two years, and there's no FDA-approved testosterone product for women in the U.S., so it's prescribed off-label. The same consensus found the evidence doesn't support testosterone for any other symptom or condition, and it advises against compounded testosterone.<sup class="r"><a href="#s11">11</a></sup></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NON-HORMONAL -->
+<section class="s" id="nonhormonal">
+  <div class="wrap">
+    <div class="s-head">
+      <h2>Two newer non-hormonal medicines block the brain pathway behind hot flashes</h2>
+    </div>
+    <div class="prose">
+      <p>These medicines target the nerve cells described in <a href="#hotflashes">Figure 2</a>. ACOG gives them a strong recommendation for women who can't or don't want to take hormones, alongside low-dose antidepressants.<sup class="r"><a href="#s1">1</a></sup></p>
+    </div>
+    <div class="tbl-wrap" style="margin-top:16px">
+      <table>
+        <thead><tr><th scope="col">Medicine</th><th scope="col">How it works</th><th scope="col">What to know</th><th scope="col">Evidence</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Fezolinetant (Veozah), approved 2023</th><td>Blocks the receptor that receives the neurokinin B message.</td><td>Benefits can start within days. A rare but serious liver injury led to a boxed warning, so you'll need liver blood tests before starting and at months 1, 2, 3, 6 and 9. Stop and call your clinician if you notice unusual tiredness, nausea, dark urine, or yellowing of the skin or eyes.<sup class="r"><a href="#s12">12</a>,<a href="#s1">1</a></sup></td><td><span class="ev e3"><b>●●●</b> Strong</span></td></tr>
+          <tr><th scope="row">Elinzanetant (Lynkuet), approved October 2025</th><td>Blocks two related receptors (NK1 and NK3).</td><td>Taken once at bedtime. In trials, hot flashes fell by roughly three-quarters at 12 weeks, compared with about half on placebo, and sleep improved. Common side effects are headache, tiredness, dizziness and drowsiness. Liver tests are needed before starting and at 3 months. Not for use during pregnancy.<sup class="r"><a href="#s13">13</a>,<a href="#s1">1</a></sup></td><td><span class="ev e3"><b>●●●</b> Strong</span></td></tr>
+          <tr><th scope="row">Low-dose SSRI or SNRI antidepressants</th><td>Act on brain chemicals involved in temperature control and mood.</td><td>Helps hot flashes and mood together. One low-dose paroxetine product is FDA-approved for hot flashes. Paroxetine and fluoxetine interfere with tamoxifen, so tell your clinician if you take it.<sup class="r"><a href="#s1">1</a>,<a href="#s3">3</a></sup></td><td><span class="ev e3"><b>●●●</b> Strong</span></td></tr>
+          <tr><th scope="row">Gabapentin</th><td>A nerve medicine that also calms hot flashes.</td><td>Best taken at bedtime, where it can help night sweats and sleep. Dizziness and drowsiness are common.<sup class="r"><a href="#s1">1</a></sup></td><td><span class="ev e2"><b>●●○</b> Moderate</span></td></tr>
+          <tr><th scope="row">Oxybutynin</th><td>A bladder medicine that reduces sweating and hot flashes.</td><td>The Menopause Society lists it as an option. ACOG limits its use because of links to cognitive decline in women over 65.<sup class="r"><a href="#s3">3</a>,<a href="#s1">1</a></sup></td><td><span class="ev e1"><b>●○○</b> Limited</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sub-s" id="nondrug">
+      <h3>Cognitive behavioral therapy and clinical hypnosis have the best evidence among non-drug approaches</h3>
+      <div class="cards">
+        <div class="card"><span class="ev e2"><b>●●○</b> Recommended</span><h3>Cognitive behavioral therapy</h3><p>A short, structured course of talk therapy that changes how you respond to hot flashes and sleep problems. It makes hot flashes less bothersome and helps sleep and mood.<sup class="r"><a href="#s1">1</a>,<a href="#s3">3</a>,<a href="#s4">4</a></sup></p></div>
+        <div class="card"><span class="ev e2"><b>●●○</b> Recommended</span><h3>Clinical hypnosis</h3><p>Guided sessions with a trained practitioner reduced hot flashes in trials and helped sleep.<sup class="r"><a href="#s1">1</a>,<a href="#s3">3</a>,<a href="#s4">4</a></sup></p></div>
+        <div class="card"><span class="ev e2"><b>●●○</b> Recommended</span><h3>Weight loss</h3><p>For women carrying extra weight, losing some of it reduced hot flashes.<sup class="r"><a href="#s3">3</a></sup></p></div>
+        <div class="card"><span class="ev e1"><b>●○○</b> For severe cases</span><h3>Stellate ganglion block</h3><p>An injection near a nerve cluster in the neck, considered for severe hot flashes when other treatments fail. Rare risks include bleeding and seizures.<sup class="r"><a href="#s3">3</a></sup></p></div>
+        <div class="card"><span class="ev e1"><b>●○○</b> Good for sleep and mood</span><h3>Exercise and mindfulness</h3><p>Both help sleep and mood, which is reason enough to do them. Neither has been shown to reduce hot flashes much.<sup class="r"><a href="#s1">1</a>,<a href="#s3">3</a></sup></p></div>
+        <div class="card"><span class="ev e1"><b>●○○</b> Experts disagree</span><h3>Acupuncture</h3><p>ACOG suggests it based on low-quality evidence, while the Menopause Society does not recommend it. Results against sham acupuncture have been mixed.<sup class="r"><a href="#s1">1</a>,<a href="#s3">3</a></sup></p></div>
+      </div>
+      <div class="card" style="margin-top:14px">
+        <span class="ev e0"><b>✕</b> Not supported</span>
+        <h3>Supplements, herbs and gadgets</h3>
+        <p>Black cohosh, soy isoflavones and other plant estrogens, and evening primrose oil have not been shown to work, and supplements aren't regulated for safety or purity. Paced breathing, cooling products and avoiding triggers haven't been shown to reduce hot flashes, although they're harmless to try for comfort. Cannabis products haven't been shown to help either.<sup class="r"><a href="#s1">1</a>,<a href="#s3">3</a>,<a href="#s4">4</a></sup></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LONG TERM -->
+<section class="s" id="longterm">
+  <div class="wrap">
+    <div class="s-head">
+      <h2>Habits and screenings started during the transition protect bone, muscle, heart and brain later in life</h2>
+    </div>
+    <div class="prose">
+      <p>Women can now spend up to 40% of their lives after menopause.<sup class="r"><a href="#s17">17</a></sup> Because several of the biggest changes happen in a short window, the transition is a good time to put the most useful habits in place.</p>
+    </div>
+
+    <div class="sub-s" id="bone">
+      <h3>Heavy strength training with impact builds bone, and calcium and vitamin D work best from food</h3>
+      <div class="cards">
+        <div class="card"><h3>Lift heavy, gradually, with supervision at first</h3><p>In an Australian trial, women in their 60s with low bone density did supervised heavy lifting and jumping for 30 minutes twice a week. After eight months they had gained bone density in the spine and hip and stood slightly taller, with no fractures from the training.<sup class="r"><a href="#s37">37</a></sup> If you already have osteoporosis, start with a trainer or physical therapist.</p></div>
+        <div class="card"><h3>Get calcium and vitamin D mainly from what you eat</h3><p>Daily targets are about 1,000 to 1,200 mg of calcium and 600 to 800 IU of vitamin D, from all sources. Low-dose supplements haven't been shown to prevent fractures in women without a deficiency, and calcium plus vitamin D supplements slightly raise kidney stone risk.<sup class="r"><a href="#s9">9</a></sup></p></div>
+        <div class="card"><h3>Know when to get a bone density scan</h3><p>All women should have one at 65. If you're past menopause and younger than 65, ask about a risk check if you have a risk factor such as a parent who broke a hip, low body weight, smoking, heavy drinking or long-term steroid use.<sup class="r"><a href="#s8">8</a></sup></p></div>
+      </div>
+    </div>
+
+    <div class="sub-s" id="muscle">
+      <h3>Strength training at least twice a week, with enough protein, protects muscle</h3>
+      <div class="prose">
+        <p>U.S. activity guidelines call for at least 150 minutes of moderate activity a week plus muscle-strengthening work on two or more days.<sup class="r"><a href="#s19">19</a></sup> Only about 7% of women going through the transition meet the activity guidelines.<sup class="r"><a href="#s17">17</a></sup></p>
+        <p>For protein, an international expert group recommends 1.0 to 1.2 grams per kilogram of body weight a day for adults over 65, and more for those who exercise. For a 150-pound woman, that works out to roughly 68 to 82 grams a day.<sup class="r"><a href="#s18">18</a></sup> Research in midlife women is thinner, and one short trial in postmenopausal women who were lifting weights found no extra muscle gain from eating more protein than the standard recommendation.<sup class="r"><a href="#s40">40</a></sup> Getting enough protein is sensible; very high intakes aren't proven to add much.</p>
+      </div>
+    </div>
+
+    <div class="sub-s" id="heart">
+      <h3>Checking heart risk factors in your 40s and 50s catches the changes the transition brings</h3>
+      <div class="prose">
+        <p>The American Heart Association calls the menopause transition a key window for early prevention. Ask for your blood pressure, LDL cholesterol and blood sugar to be checked, and keep an eye on your waist size, since belly fat carries extra risk even at a normal weight.<sup class="r"><a href="#s17">17</a></sup> Limited trial data suggest that combined lifestyle programs during the transition can prevent weight gain and improve blood pressure, triglycerides and blood sugar.<sup class="r"><a href="#s17">17</a></sup> Not smoking matters too; smoking also brings on menopause about one to two years earlier.<sup class="r"><a href="#s44">44</a></sup></p>
+      </div>
+    </div>
+
+    <div class="sub-s" id="sleep">
+      <h3>Treating insomnia and depression protects the brain more reliably than any supplement</h3>
+      <div class="prose">
+        <p>Cognitive behavioral therapy for insomnia (CBT-I) is the recommended first treatment for chronic insomnia in adults. Sleeping pills are meant for short stretches, while the skills learned in CBT-I keep working over the long term, with fewer harms. It's offered in person, by phone, online and through self-help books.<sup class="r"><a href="#s10">10</a></sup> Chronic insomnia has also been linked to faster biological aging.<sup class="r"><a href="#s32">32</a></sup></p>
+        <p>For long-term brain health, researchers point to steps with broad evidence, such as keeping blood pressure in range and staying active. Hormone therapy should not be started for the purpose of preventing dementia.<sup class="r"><a href="#s4">4</a>,<a href="#s45">45</a></sup></p>
+      </div>
+    </div>
+
+    <div class="sub-s" id="skin">
+      <h3>Daily sunscreen is the best-proven way to slow skin aging</h3>
+      <div class="prose">
+        <p>In a randomized trial of adults under 55, people who applied broad-spectrum sunscreen every morning showed no detectable increase in skin aging over four and a half years, and 24% less aging than people who used it only some of the time.<sup class="r"><a href="#s38">38</a></sup> Estrogen therapy increases skin collagen and thickness in studies, but it isn't approved or recommended for skin alone.<sup class="r"><a href="#s31">31</a></sup></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAUTIONS & OPEN QUESTIONS -->
+<section class="s" id="cautions">
+  <div class="wrap">
+    <div class="twocol">
+      <div class="card">
+        <h3>Some popular menopause treatments lack evidence or carry avoidable risks</h3>
+        <ul class="plain">
+          <li>Compounded hormones and hormone pellets, which aren't FDA-approved.<sup class="r"><a href="#s2">2</a></sup></li>
+          <li>Saliva tests or hormone panels used to set doses.<sup class="r"><a href="#s2">2</a>,<a href="#s4">4</a></sup></li>
+          <li>Estrogen doses above approved ranges, and testosterone for anything other than low sexual desire. The British Menopause Society reported growing use of both in 2026.<sup class="r"><a href="#s15">15</a></sup></li>
+          <li>Supplements marketed for menopause.<sup class="r"><a href="#s1">1</a></sup></li>
+          <li>Starting hormone therapy at 65 or older to prevent disease.<sup class="r"><a href="#s4">4</a>,<a href="#s36">36</a></sup></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Researchers are still working out several open questions</h3>
+        <ul class="plain">
+          <li>How long it's safe to continue hormone therapy past 60 or 65, since few trials have tested it.<sup class="r"><a href="#s2">2</a></sup></li>
+          <li>Whether starting estrogen early protects the brain; trials so far are neutral.<sup class="r"><a href="#s36">36</a></sup></li>
+          <li>Whether micronized progesterone carries less breast cancer risk than other progestogens.<sup class="r"><a href="#s35">35</a></sup></li>
+          <li>Long-term safety of testosterone and of the newer neurokinin blockers.<sup class="r"><a href="#s11">11</a>,<a href="#s13">13</a></sup></li>
+          <li>How weight-loss medicines such as GLP-1 drugs work alongside hormone therapy.<sup class="r"><a href="#s15">15</a></sup></li>
+          <li>How best to treat perimenopause itself, which has been studied far less than the years after menopause.<sup class="r"><a href="#s4">4</a>,<a href="#s23">23</a></sup></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPOINTMENT -->
+<section class="s" id="appointment">
+  <div class="wrap">
+    <div class="s-head">
+      <h2>A symptom record and a short list of questions make the appointment more productive</h2>
+    </div>
+    <div class="twocol">
+      <div class="card">
+        <h3>Find a clinician who knows menopause care</h3>
+        <p>The Menopause Society keeps a searchable directory that shows which clinicians hold its certification (MSCP, Menopause Society Certified Practitioner). Many offer telehealth.<sup class="r"><a href="#s16">16</a></sup></p>
+        <a class="more" href="https://menopause.org/for-women/whats-an-ncmp">Search the directory</a>
+        <h3 style="margin-top:12px">Bring these with you</h3>
+        <ul class="plain">
+          <li>Dates of your recent periods and how your cycle has changed.</li>
+          <li>Your symptoms, how often they happen and how much they bother you.</li>
+          <li>Family history of breast cancer, heart disease, blood clots or osteoporosis.</li>
+          <li>Every medicine and supplement you take.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Questions to ask</h3>
+        <p class="small muted">Tick the ones you want to bring. Your choices are saved in this browser.</p>
+        <ul class="check" id="qlist">
+          <li><label for="q1"><input type="checkbox" id="q1"><span>Given my age, how long it's been since my last period and my health history, am I a good candidate for hormone therapy?</span></label></li>
+          <li><label for="q2"><input type="checkbox" id="q2"><span>Would a patch or gel be a better choice for me than a pill?</span></label></li>
+          <li><label for="q3"><input type="checkbox" id="q3"><span>Do I need a progestogen, and which kind do you recommend?</span></label></li>
+          <li><label for="q4"><input type="checkbox" id="q4"><span>If hormones aren't right for me, would fezolinetant, elinzanetant or another non-hormonal medicine fit, and what monitoring would I need?</span></label></li>
+          <li><label for="q5"><input type="checkbox" id="q5"><span>Should I start low-dose vaginal estrogen for vaginal or bladder symptoms?</span></label></li>
+          <li><label for="q6"><input type="checkbox" id="q6"><span>Do I still need birth control, and for how long?</span></label></li>
+          <li><label for="q7"><input type="checkbox" id="q7"><span>When should I have a bone density scan, given my risk factors?</span></label></li>
+          <li><label for="q8"><input type="checkbox" id="q8"><span>Can we check my blood pressure, cholesterol and blood sugar, and do I need any other heart tests?</span></label></li>
+          <li><label for="q9"><input type="checkbox" id="q9"><span>Are my sleep or mood changes something we should treat directly?</span></label></li>
+          <li><label for="q10"><input type="checkbox" id="q10"><span>How will we decide when, or whether, to stop treatment?</span></label></li>
+        </ul>
+        <div class="copy-row">
+          <button class="btn" type="button" id="copyq">Copy my questions</button>
+          <span class="copy-msg" id="copymsg" aria-live="polite"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOURCES -->
+<section class="s" id="sources">
+  <div class="wrap">
+    <div class="s-head">
+      <h2>Sources for every recommendation on this page</h2>
+      <p class="muted">Guidelines first, then the studies behind specific numbers. Researched November 14, 2026.</p>
+    </div>
+    <div class="src-group">Guidelines, regulators and position statements</div>
+    <ol class="src">
+      <li id="s1">American College of Obstetricians and Gynecologists. Management of menopause-related vasomotor, sleep, and mood symptoms. Clinical Practice Guideline No. 13. Obstetrics &amp; Gynecology, 2026. <a href="https://www.acog.org/news/2026/10/acog-expands-recommendations-for-management-of-menopause-symptoms/">ACOG announcement</a>; <a href="https://www.contemporaryobgyn.net/view/acog-guideline-expands-menopause-vms-sleep-and-mood-recommendations">summary of recommendations</a>.</li>
+      <li id="s2">The Menopause Society. The 2022 hormone therapy position statement. Menopause, 2022. <a href="https://doi.org/10.1097/GME.0000000000002028">doi.org/10.1097/GME.0000000000002028</a></li>
+      <li id="s3">The Menopause Society. The 2023 nonhormone therapy position statement. Menopause, 2023. <a href="https://doi.org/10.1097/GME.0000000000002200">doi.org/10.1097/GME.0000000000002200</a></li>
+      <li id="s4">Lumsden MA, et al. European Society of Endocrinology clinical practice guideline for evaluation and management of menopause and the perimenopause. European Journal of Endocrinology, 2025. <a href="https://doi.org/10.1093/ejendo/lvaf206">doi.org/10.1093/ejendo/lvaf206</a></li>
+      <li id="s5">Kaufman MR, et al. The AUA/SUFU/AUGS guideline on genitourinary syndrome of menopause. Journal of Urology, 2025. <a href="https://www.auanet.org/guidelines-and-quality/guidelines/genitourinary-syndrome-of-menopause">AUA guideline page</a></li>
+      <li id="s6">FDA removes boxed warnings from 3 more menopausal hormone therapy products. Contemporary OB/GYN, October 30, 2026, summarizing FDA and HHS releases of February 12 and October 30, 2026. <a href="https://www.contemporaryobgyn.net/view/fda-removes-boxed-warnings-from-3-more-menopausal-hormone-therapy-products">Article</a>; <a href="https://www.hhs.gov/press-room/fda-advances-menopause-care-hormone-therapy-labeling-access.html">HHS release</a></li>
+      <li id="s7">Perrone M. FDA removes long-standing warning from hormone-based menopause drugs. Associated Press, November 11, 2025. <a href="https://abc30.com/post/fda-removes-long-standing-warning-hrt-hormone-replacement-therapy-based-menopause-drugs/18139846/">Article</a></li>
+      <li id="s8">U.S. Preventive Services Task Force. Osteoporosis to prevent fractures: screening. Final recommendation, January 14, 2025. <a href="https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening">Recommendation</a></li>
+      <li id="s9">U.S. Preventive Services Task Force. Vitamin D, calcium, or combined supplementation for the primary prevention of fractures, 2018, with National Academy of Medicine intake targets. <a href="https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/vitamin-d-calcium-or-combined-supplementation-for-the-primary-prevention-of-fractures-in-adults-preventive-medication">Recommendation</a>; <a href="https://epocrates.com/online/article/uspstf-draft-recommends-against-vitamin-d-supplementation-for-primary">intake targets summary</a></li>
+      <li id="s10">Qaseem A, et al. Management of chronic insomnia disorder in adults: a clinical practice guideline from the American College of Physicians. Annals of Internal Medicine, 2016. <a href="https://pubmed.ncbi.nlm.nih.gov/27136449/">PubMed</a></li>
+      <li id="s11">Davis SR, et al. Global consensus position statement on the use of testosterone therapy for women. Climacteric, 2019. <a href="https://doi.org/10.1080/13697137.2019.1637079">doi.org/10.1080/13697137.2019.1637079</a></li>
+      <li id="s12">U.S. Food and Drug Administration. FDA adds warning about rare occurrence of serious liver injury with use of Veozah (fezolinetant), 2024. <a href="https://www.fda.gov/safety/medical-product-safety-information/fda-adds-warning-about-rare-occurrence-serious-liver-injury-use-veozah-fezolinetant-hot-flashes-due">FDA safety notice</a></li>
+      <li id="s13">Lynkuet (elinzanetant) prescribing information, October 2025, and trial results reported at approval. <a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219469s000lbl.pdf">FDA label</a>; <a href="https://www.americanpharmaceuticalreview.com/1315-News/622339-FDA-Approves-Bayer-s-Lynkuet-First-Non-Hormonal-Oral-Treatment-for-Menopausal-Hot-Flashes/">approval report</a></li>
+      <li id="s14">Maki PM, Kornstein SG, et al. Guidelines for the evaluation and treatment of perimenopausal depression. Menopause and Journal of Women's Health, 2018. <a href="https://doi.org/10.1089/jwh.2018.27099.mensocrec">doi.org/10.1089/jwh.2018.27099.mensocrec</a></li>
+      <li id="s15">British Menopause Society. Society update: a strengthened evidence-based approach in menopause care. European Medical Journal, 2026. <a href="https://www.emjreviews.com/reproductive-health/article/british-menopause-society-j15126/">Article</a></li>
+      <li id="s16">The Menopause Society. How to find a certified menopause practitioner. <a href="https://menopause.org/for-women/whats-an-ncmp">menopause.org</a></li>
+      <li id="s17">El Khoudary SR, et al. Menopause transition and cardiovascular disease risk: implications for timing of early prevention. American Heart Association scientific statement, Circulation, 2020. <a href="https://newsroom.heart.org/news/heart-disease-risk-in-women-increases-leading-up-to-menopause-early-intervention-is-key">AHA summary</a>; <a href="https://www.menopause.org.au/images/docs/Menopause_transition_and_CVD_risk.pdf">full statement</a></li>
+      <li id="s18">Bauer J, et al. Evidence-based recommendations for optimal dietary protein intake in older people: PROT-AGE Study Group. Journal of the American Medical Directors Association, 2013. <a href="https://doi.org/10.1016/j.jamda.2013.05.021">doi.org/10.1016/j.jamda.2013.05.021</a></li>
+      <li id="s19">U.S. Department of Health and Human Services. Physical Activity Guidelines for Americans, 2nd edition. <a href="https://health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines">health.gov</a></li>
+    </ol>
+    <div class="src-group">Studies and reviews</div>
+    <ol class="src" start="20">
+      <li id="s20">Avis NE, et al. Duration of menopausal vasomotor symptoms over the menopause transition (Study of Women's Health Across the Nation). JAMA Internal Medicine, 2015. <a href="https://doi.org/10.1001/jamainternmed.2014.8063">doi.org/10.1001/jamainternmed.2014.8063</a></li>
+      <li id="s21">Rossouw JE, Aragaki AK, Manson JE, et al. Menopausal hormone therapy and cardiovascular diseases in women with vasomotor symptoms: secondary analysis of the Women's Health Initiative trials. JAMA Internal Medicine, 2025. <a href="https://doi.org/10.1001/jamainternmed.2025.4510">doi.org/10.1001/jamainternmed.2025.4510</a></li>
+      <li id="s22">Harlow SD, Paramsothy P. Menstruation and the menopausal transition. Obstetrics and Gynecology Clinics of North America, 2011 (staging criteria from the STRAW+10 workshop). <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3232023">PMC</a></li>
+      <li id="s23">Santoro N. Perimenopause: from research to practice. Journal of Women's Health, 2016. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4834516">PMC</a></li>
+      <li id="s24">Rance NE, et al. Modulation of body temperature and LH secretion by hypothalamic KNDy neurons: a novel hypothesis on the mechanism of hot flushes. Frontiers in Neuroendocrinology, 2013. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3833827">PMC</a></li>
+      <li id="s25">Mosconi L, et al. In vivo brain estrogen receptor density by neuroendocrine aging and relationships with cognition and symptomatology. Scientific Reports, 2024. <a href="https://doi.org/10.1038/s41598-024-62820-7">doi.org/10.1038/s41598-024-62820-7</a></li>
+      <li id="s26">Greendale GA, et al. Effects of the menopause transition and hormone use on cognitive performance in midlife women. Neurology, 2009. <a href="https://pubmed.ncbi.nlm.nih.gov/19470968">PubMed</a></li>
+      <li id="s27">Greendale GA, et al. Bone mineral density loss in relation to the final menstrual period in a multiethnic cohort. Journal of Bone and Mineral Research, 2012. <a href="https://doi.org/10.1002/jbmr.534">doi.org/10.1002/jbmr.534</a></li>
+      <li id="s28">Study of Women's Health Across the Nation investigators. Insulin resistance and bone mineral density before, during and after the menopause transition. JCI Insight, 2022. <a href="https://insight.jci.org/articles/view/162085">JCI Insight</a></li>
+      <li id="s29">Shieh A, Greendale GA, et al. Faster bone loss during the menopause transition and subsequent fracture (Study of Women's Health Across the Nation). <a href="https://www.physiciansweekly.com/?p=319938">Summary</a></li>
+      <li id="s30">Wright VJ, et al. The musculoskeletal syndrome of menopause. Climacteric, 2024. <a href="https://doi.org/10.1080/13697137.2024.2380363">doi.org/10.1080/13697137.2024.2380363</a></li>
+      <li id="s31">Brincat MP, Baron YM, Galea R. Estrogens and the skin. Climacteric, 2005, and related work on skin collagen after menopause. <a href="https://pubmed.ncbi.nlm.nih.gov/16147639/">PubMed</a></li>
+      <li id="s32">Levine ME, et al. Menopause accelerates biological aging. PNAS, 2016, with a companion UCLA study on insomnia. <a href="https://doi.org/10.1073/pnas.1604558113">doi.org/10.1073/pnas.1604558113</a>; <a href="https://www.uclahealth.org/news/release/menopause-sleepless-nights-may-make-women-age-faster">UCLA release</a></li>
+      <li id="s33">Vinogradova Y, Coupland C, Hippisley-Cox J. Use of hormone replacement therapy and risk of venous thromboembolism. BMJ, 2019. <a href="https://doi.org/10.1136/bmj.k4810">doi.org/10.1136/bmj.k4810</a></li>
+      <li id="s34">Review of studies comparing oral and transdermal hormone therapy and progestogen types for blood clot risk. Archives of Gynecology and Obstetrics, 2022. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10147786/">PMC</a></li>
+      <li id="s35">Breast cancer risk with hormone therapy: Pinkerton JV, editorial, Menopause, 2022 (<a href="https://news.med.virginia.edu/wp-content/blogs.dir/8/files/2022/08/MENO-D-22-00210-5-final.pdf">PDF</a>), and Kling J, on absolute risk (<a href="https://cm.healio.com/news/endocrinology/20210930/consider-benefits-risks-when-prescribing-menopausal-hormone-therapy">Healio</a>).</li>
+      <li id="s36">Gleason CE, et al. Long-term cognitive effects of menopausal hormone therapy: findings from the KEEPS Continuation Study. PLOS Medicine, 2024. <a href="https://doi.org/10.1371/journal.pmed.1004435">doi.org/10.1371/journal.pmed.1004435</a></li>
+      <li id="s37">Watson SL, et al. High-intensity resistance and impact training improves bone mineral density and physical function in postmenopausal women with osteopenia and osteoporosis: the LIFTMOR trial. Journal of Bone and Mineral Research, 2018. <a href="https://www.sciencedaily.com/releases/2017/10/171004084937.htm">Summary</a>; <a href="https://pubmed.ncbi.nlm.nih.gov/30612163/">safety follow-up</a></li>
+      <li id="s38">Hughes MCB, et al. Sunscreen and prevention of skin aging: a randomized trial. Annals of Internal Medicine, 2013. <a href="https://blogs.the-hospitalist.org/content/daily-sunscreen-slowed-skin-aging-middle-aged-adults">Summary</a></li>
+      <li id="s39">Contraception in perimenopause: Baldwin MK, Jensen JT, review, 2013 (<a href="https://pubmed.ncbi.nlm.nih.gov/24773233/">PubMed</a>), and Bateson D, et al., Australian Family Physician, 2017 (<a href="https://www.racgp.org.au/afp/2017/june/perimenopausal-contraception-a-practice-based-approach/">article</a>).</li>
+      <li id="s40">Gregorio L, et al. Higher protein intake does not improve lean mass gain when compared with RDA recommendation in postmenopausal women following resistance exercise. Nutrients, 2017. <a href="https://doi.org/10.3390/nu9091007">doi.org/10.3390/nu9091007</a></li>
+      <li id="s41">Conklin M, Santoro N. Neurokinin receptor antagonists for the treatment of menopausal vasomotor symptoms. Therapeutic Advances in Reproductive Health, 2023. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10302519">PMC</a></li>
+      <li id="s42">Coverage of the February 2026 label changes, including hormone therapy use before and after 2002. Managed Healthcare Executive, February 13, 2026. <a href="https://www.managedhealthcareexecutive.com/view/fda-approves-removal-of-black-box-warning-for-six-menopausal-hormone-therapies">Article</a></li>
+      <li id="s43">Contraception in the perimenopause. Journal of the British Menopause Society, 2003. <a href="https://pubmed.ncbi.nlm.nih.gov/14670198/">PubMed</a></li>
+      <li id="s44">Kuokkanen S, Santoro N. Endocrinology of the perimenopausal woman. Global Library of Women's Medicine, 2011. <a href="https://www.glowm.com/section-view/heading/endocrinology-of-the-perimenopausal-woman/item/82">GLOWM</a></li>
+      <li id="s45">Timing-dependent effects of estrogen therapy on Alzheimer's disease risk, presented at the American Neurological Association Annual Meeting, 2025 (conference data, not yet peer-reviewed). <a href="https://www.healio.com/news/neurology/20250915/hormone-replacement-therapy-timing-linked-to-alzheimers-disease-risks">Healio</a></li>
+      <li id="s46">U.S. Preventive Services Task Force. Hormone therapy for the primary prevention of chronic conditions in postmenopausal persons, 2022. <a href="https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/menopausal-hormone-therapy-preventive-medication">Recommendation</a></li>
+    </ol>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Compiled November 2026 from the guidelines and studies listed above. Medical guidance changes, so check the Menopause Society and ACOG for updates. This page is general information and doesn't replace advice from a clinician who knows your health history.</p>
+  </div>
+</footer>
+
+<div class="tip" id="tip" role="tooltip" hidden></div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* Tooltips for chart marks */
+  var tip = document.getElementById("tip");
+  function showTip(text, x, y) {
+    tip.textContent = text;
+    tip.hidden = false;
+    var w = tip.offsetWidth, h = tip.offsetHeight;
+    var left = Math.min(Math.max(8, x + 14), window.innerWidth - w - 8);
+    var top = y - h - 12;
+    if (top < 8) top = y + 18;
+    tip.style.left = left + "px";
+    tip.style.top = top + "px";
+  }
+  function hideTip() { tip.hidden = true; }
+  document.querySelectorAll(".tip-target").forEach(function (el) {
+    var text = el.getAttribute("data-tip");
+    el.addEventListener("pointermove", function (e) { showTip(text, e.clientX, e.clientY); });
+    el.addEventListener("pointerleave", hideTip);
+    el.addEventListener("focus", function () {
+      var r = el.getBoundingClientRect();
+      showTip(text, r.left + Math.min(r.width / 2, 120), r.top);
+    });
+    el.addEventListener("blur", hideTip);
+  });
+  window.addEventListener("scroll", hideTip, { passive: true });
+
+  /* Section finder */
+  var S = {
+    stages: ["#stages", "How the stages of the transition work"],
+    swings: ["#hormone-swings", "Why perimenopause can feel worse than menopause"],
+    hot: ["#hotflashes", "What causes hot flashes and how long they last"],
+    options: ["#options", "Treatment guide, organized by symptom"],
+    ht: ["#hormones", "Hormone therapy: who it suits and what changed"],
+    htage: ["#ht-age", "How age and timing change the risks of hormone therapy"],
+    htforms: ["#ht-forms", "Patches, gels and body-identical hormones"],
+    htbreast: ["#ht-breast", "Hormone therapy and breast cancer risk"],
+    nonhorm: ["#nonhormonal", "Non-hormonal prescription options"],
+    nondrug: ["#nondrug", "Non-drug approaches that work, and ones that don't"],
+    peri: ["#perimenopause", "Birth control options that also treat perimenopause symptoms"],
+    brain: ["#brain", "Brain fog, mood and the menopause transition"],
+    sleep: ["#sleep", "Treating insomnia"],
+    vaginal: ["#vaginal", "Vaginal and urinary symptoms"],
+    desire: ["#desire", "Testosterone for low sexual desire"],
+    body: ["#body", "How the body changes around the final period"],
+    bone: ["#bone", "Protecting your bones"],
+    muscle: ["#muscle", "Strength training and protein"],
+    heart: ["#heart", "Heart checks during the transition"],
+    longterm: ["#longterm", "Long-term health habits"],
+    appt: ["#appointment", "Preparing for your appointment"]
+  };
+  var BASE = {
+    hot: ["hot", "ht", "nonhorm"],
+    sleep: ["sleep", "options", "hot"],
+    mood: ["brain", "options", "sleep"],
+    periods: ["swings", "peri", "stages"],
+    vaginal: ["vaginal", "options"],
+    desire: ["desire", "vaginal"],
+    body: ["body", "muscle", "heart"],
+    longterm: ["body", "bone", "heart", "longterm"],
+    ht: ["ht", "htage", "htforms", "htbreast"]
+  };
+  function plan(concern, stage, noHorm) {
+    var list = BASE[concern].slice();
+    function drop(k) { list = list.filter(function (x) { return x !== k; }); }
+    function add(k) { if (list.indexOf(k) === -1) list.push(k); }
+    if (noHorm) {
+      ["ht", "htage", "htforms", "htbreast"].forEach(drop);
+      if (concern === "hot" || concern === "sleep" || concern === "ht") { add("nonhorm"); add("nondrug"); }
+      if (concern === "vaginal") { add("options"); }
+    } else if (stage === "late" && (concern === "hot" || concern === "ht")) {
+      add("htage");
+    }
+    if (stage === "peri" && ["hot", "sleep", "mood", "periods", "ht"].indexOf(concern) !== -1) add("peri");
+    if (stage === "unsure") add("stages");
+    add("appt");
+    return list.slice(0, 5);
+  }
+  var form = document.getElementById("finder");
+  var out = document.getElementById("finder-out");
+  var reset = document.getElementById("f-reset");
+  var selC = document.getElementById("f-concern");
+  var selS = document.getElementById("f-stage");
+  var chk = document.getElementById("f-nohorm");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (!selC.value) { out.hidden = false; out.innerHTML = '<p class="lead">Pick what you would most like help with first.</p>'; selC.focus(); return; }
+    var keys = plan(selC.value, selS.value, chk.checked);
+    var html = '<p class="lead">Start with these sections, in this order:</p>';
+    keys.forEach(function (k) {
+      var s = S[k];
+      html += '<a class="hit" href="' + s[0] + '"><strong>' + s[1] + '</strong></a>';
+    });
+    if (!selS.value) html += '<p class="lead">Add where you are in the transition for a closer fit.</p>';
+    out.innerHTML = html;
+    out.hidden = false;
+    reset.hidden = false;
+  });
+  reset.addEventListener("click", function () {
+    form.reset(); out.hidden = true; out.innerHTML = ""; reset.hidden = true; selC.focus();
+  });
+
+  /* Question checklist: remembered in this browser only */
+  var KEY = "meno-guide-questions";
+  var boxes = Array.prototype.slice.call(document.querySelectorAll("#qlist input[type=checkbox]"));
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (err) { saved = {}; }
+  boxes.forEach(function (b) {
+    if (saved[b.id]) b.checked = true;
+    b.addEventListener("change", function () {
+      saved[b.id] = b.checked;
+      try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (err) {}
+    });
+  });
+  var msg = document.getElementById("copymsg");
+  document.getElementById("copyq").addEventListener("click", function () {
+    var chosen = boxes.filter(function (b) { return b.checked; });
+    var use = chosen.length ? chosen : boxes;
+    var text = "Questions for my menopause appointment\n\n" + use.map(function (b, i) {
+      return (i + 1) + ". " + b.parentNode.querySelector("span").textContent;
+    }).join("\n");
+    function done(ok) {
+      msg.textContent = ok ? (chosen.length ? "Copied your " + chosen.length + " questions." : "Copied all 10 questions.") : "Copying isn't available here. Select the questions and copy them by hand.";
+    }
+    try {
+      navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
+    } catch (err) { done(false); }
+  });
+
+  /* Highlight the current section in the bar */
+  var links = Array.prototype.slice.call(document.querySelectorAll("nav.bar a"));
+  var targets = links.map(function (a) { return document.querySelector(a.getAttribute("href")); });
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          var i = targets.indexOf(en.target);
+          links.forEach(function (l, j) { l.classList.toggle("on", j === i); });
+        }
+      });
+    }, { rootMargin: "-40% 0px -55% 0px" });
+    targets.forEach(function (t) { if (t) io.observe(t); });
+  }
+})();
+</script>
+</body>
+</html>
